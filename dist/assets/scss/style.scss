@@ -1,0 +1,143 @@
+@import "vars.scss";
+@import "mixin.scss";
+
+/* Deafult style */
+html {
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: 'enceReg', sans-serif;
+	color: $black;
+	font-size: 1rem;
+	line-height: 1;
+	letter-spacing: 1.2px;
+	background-color: #373545;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+svg path {
+   stroke:inherit;
+   stroke-width:inherit;
+   fill:inherit;
+}
+
+button {
+	appearance: none;
+
+	&:hover {
+		cursor: pointer;
+		transition: .1s;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+input {
+	outline: none;
+	margin: 0;
+	border-radius: 0;
+}
+
+.page {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: $white;
+	min-height: 100vh;
+}
+
+.no-scroll {
+   overflow: hidden
+}
+
+.hidden {
+	display: none;
+}
+
+.disabled {
+	display: none;
+}
+
+.owl-item {
+	display: flex;
+}
+
+.owl-stage {
+	display: flex;
+}
+
+.owl-stage-outer {
+   width: 100%;
+}
+
+.disabled {
+	display: block;
+}
+
+/* Font-family */
+@import "fonts.scss";
+
+/* Btn */
+@import "btn.scss";
+
+/* Checkbox */
+@import "check.scss";
+
+/* Container */
+@import "container.scss";
+
+/* Blocks */
+@import "blocks/header.scss";
+
+@import "blocks/gallery.scss";
+
+@import "blocks/option.scss";
+
+@import "blocks/etap.scss";
+
+@import "blocks/form.scss";
+
+@import "blocks/benef.scss";
+
+@import "blocks/plan.scss";
+
+@import "blocks/footer.scss";
+
+@import "blocks/modals.scss";
