@@ -129,6 +129,7 @@ apartBtns.forEach((item, num) => {
 
 apartModalBtn.addEventListener('click', () => {
   apartModal.classList.add('active--form');
+  twoEtagBtn.style.display = 'none';
 });
 
 apartModalCross.addEventListener('click', () => {
@@ -207,10 +208,13 @@ planSections.forEach(item => {
     planEtajModal.classList.add('active');
     body.classList.add('no-scroll');
     planModalItemActive(item.classList[1])
+
+
   })
 });
 
 function planModalItemActive(name) {
+
   planModalItem.forEach(item => {
     if (item.classList[1] == name) {
       item.style.display = 'block';
@@ -222,15 +226,41 @@ function planModalItemActive(name) {
 
 //plan apart info
 const sectionsBtns = document.querySelectorAll('.room');
+const twoEtagBtn = document.querySelector('.apart__modal__etaj');
+let apartNumber = 0;
 
 sectionsBtns.forEach((item, num) => {
   item.addEventListener('click', (e) => {
     apartModalInfo(num, 'sections');
     planEtajModal.classList.remove('active');
     apartModal.classList.add('active');
+
+    twoEtag = item.querySelector('input[name="twoEtag"]');
+
+    twoEtagBtn.style.display = 'none';
+
+    if (twoEtag) {
+      twoEtagBtn.style.display = 'block';
+    }
+
+    apartNumber = num;
   })
 });
 
+// apart etaj chose
+let apartEtajNumb = 1;
+twoEtagBtn.addEventListener('click', () => {
+
+  if (apartEtajNumb == 2) {
+    document.querySelector('.apart__modal__image').src = sectionsBtns[apartNumber].childNodes[1].parentNode.querySelector('input[name="image"]').value;
+    twoEtagBtn.innerHTML = 'Выбрать 2 этаж';
+    apartEtajNumb = 1;
+  } else {
+    document.querySelector('.apart__modal__image').src = sectionsBtns[apartNumber].childNodes[1].parentNode.querySelector('input[name="twoEtag"]').value;
+    twoEtagBtn.innerHTML = 'Выбрать 1 этаж';
+    apartEtajNumb = 2;
+  }
+})
 
 //modal info
 
@@ -241,7 +271,6 @@ function apartModalInfo(num, type) {
   let apartImage;
   let apartTitle;
 
-  let apartModalItem = document.querySelectorAll('.apart__modal__item > span');
   let apartModalPloshad = document.querySelector('.apart__modal__ploshad > span');
   let apartModalInfoBlock = document.querySelector('.apart__modal__info');
   let apartModalImage = document.querySelector('.apart__modal__image');
@@ -266,7 +295,6 @@ function apartModalInfo(num, type) {
 
   if (type == 'sections') {
     let sectionsInfo = sectionsBtns[num].childNodes[1].parentNode.querySelectorAll('input[name="info"]');
-
 
     apartPloshad = sectionsBtns[num].childNodes[1].parentNode.querySelector('input[name="ploshad"]');
     apartImage = sectionsBtns[num].childNodes[1].parentNode.querySelector('input[name="image"]');

@@ -128,6 +128,23 @@
   }
 }
 
+.apart__modal__etaj {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 12px 18px 10px;
+  background-color: $gray;
+  transition: .1s;
+  display: none;
+  z-index: 200;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($gray, 3%);
+    transition: .1s;
+  }
+}
+
 .apart__modal__logo {
   max-width: 70px;
   width: 100%;
@@ -163,12 +180,14 @@
 .apart__modal__image {
   margin: 30px auto 40px;
   max-width: 520px;
+  object-fit: contain;
   width: 100%;
 
   @media (max-width: 1700px) {
     max-width: 400px;
     margin: 10px auto 30px;
   }
+
 }
 
 .apart__modal__info {

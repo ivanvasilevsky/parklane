@@ -1894,6 +1894,27 @@ a.footer__right__item {
   transition: 0.2s;
 }
 
+.apart__modal__etaj {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 12px 18px 10px;
+  background-color: #efeff1;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  display: none;
+  z-index: 200;
+}
+
+.apart__modal__etaj:hover {
+  cursor: pointer;
+  background-color: #e7e7ea;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .apart__modal__logo {
   max-width: 70px;
   width: 100%;
@@ -1911,6 +1932,8 @@ a.footer__right__item {
 .apart__modal__image {
   margin: 30px auto 40px;
   max-width: 520px;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
 
