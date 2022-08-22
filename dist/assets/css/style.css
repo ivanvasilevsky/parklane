@@ -1916,21 +1916,21 @@ a.footer__right__item {
 }
 
 .apart__modal__logo {
-  max-width: 70px;
+  max-width: 50px;
   width: 100%;
-  margin: 0px auto 20px;
+  margin: 0px auto 10px;
 }
 
 .apart__modal__title {
   font-family: "for", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 0.8;
   text-transform: uppercase;
   text-align: center;
 }
 
 .apart__modal__image {
-  margin: 30px auto 40px;
+  margin: 20px auto 30px;
   max-width: 520px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1953,9 +1953,9 @@ a.footer__right__item {
 }
 
 .apart__modal__item {
-  margin: 0 auto 10px;
+  margin: 0 auto 7px;
   max-width: 170px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "enceReg", sans-serif;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1971,10 +1971,10 @@ a.footer__right__item {
 
 .apart__modal__ploshad {
   font-family: "for", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 0.8;
   text-align: center;
-  margin: 30px 0 50px;
+  margin: 10px 0 30px;
 }
 
 .apart__modal__form__form {
@@ -3064,27 +3064,32 @@ a.footer__right__item {
   }
 
   .apart__modal__logo {
-    max-width: 50px;
+    max-width: 38px;
     margin: -10px auto 10px;
   }
 
   .apart__modal__title {
-    font-size: 35px;
+    font-size: 25px;
+  }
+
+  .apart__modal__title br {
+    display: none;
   }
 
   .apart__modal__image {
     max-width: 400px;
     margin: 10px auto 30px;
+    max-height: 330px;
   }
 
   .apart__modal__item {
-    font-size: 17px;
+    font-size: 16px;
     max-width: 150px;
   }
 
   .apart__modal__ploshad {
-    font-size: 25px;
-    margin: 15px 0 30px;
+    font-size: 22px;
+    margin: 10px 0 15px;
   }
 
   .map__modal__inner {
@@ -3284,6 +3289,131 @@ a.footer__right__item {
 
   .benef__text {
     font-size: 16px;
+  }
+
+  .plan__inner {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .plan__info {
+    width: 160px;
+    height: 160px;
+  }
+
+  .plan__info__title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  .plan__info__subtitle {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  .plan__sec.b6_14 {
+    top: 38px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b3_5 {
+    top: 215px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b2 {
+    top: 268px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v6_10 {
+    top: 148px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v3_5 {
+    top: 224px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v2 {
+    top: 267px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.a15 {
+    top: 0px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a14 {
+    top: 45px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a9_13 {
+    top: 64px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a3_8 {
+    top: 157px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
   }
 }
 
@@ -3574,8 +3704,20 @@ a.footer__right__item {
     padding: 10px 10px 15px;
   }
 
+  .apart__modal__etaj {
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    padding: 10px 15px 8px;
+  }
+
   .apart__modal__title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .apart__modal__image {
+    max-height: 270px;
   }
 
   .apart__modal__item__out {
@@ -3607,6 +3749,16 @@ a.footer__right__item {
 
   .plan__modal__inner {
     padding: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .plan__info {
+    display: none;
+  }
+
+  .plan__sec {
+    display: none;
   }
 }
 
@@ -3822,6 +3974,19 @@ a.footer__right__item {
   .benef__text {
     font-size: 14px;
   }
+
+  .apart__modal__etaj {
+    font-size: 12px;
+    padding: 8px 10px 7px;
+  }
+
+  .apart__modal__image {
+    max-height: 240px;
+  }
+
+  .apart__modal__item {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -3872,7 +4037,7 @@ a.footer__right__item {
 
   .apart__modal__title {
     margin-bottom: 0px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -3887,6 +4052,21 @@ a.footer__right__item {
 
   .benef__text {
     font-size: 12px;
+  }
+
+  .apart__modal__etaj {
+    font-size: 10px;
+    padding: 8px 6px 7px;
+  }
+
+  .apart__modal__image {
+    max-height: 200px;
+    margin: 5px auto 15px;
+  }
+
+  .apart__modal__ploshad {
+    font-size: 16px;
+    margin: 5px 0 10px;
   }
 }
 

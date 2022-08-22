@@ -143,42 +143,64 @@
     background-color: darken($gray, 3%);
     transition: .1s;
   }
+
+  @media (max-width: 600px) {
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    padding: 10px 15px 8px;
+  }
+
+  @media (max-width: 390px) {
+    font-size: 12px;
+    padding: 8px 10px 7px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 10px;
+    padding: 8px 6px 7px;
+  }
 }
 
 .apart__modal__logo {
-  max-width: 70px;
+  max-width: 50px;
   width: 100%;
-  margin: 0px auto 20px;
+  margin: 0px auto 10px;
 
   @media (max-width: 1700px) {
-    max-width: 50px;
+    max-width: 38px;
     margin: -10px auto 10px;
   }
 }
 
 .apart__modal__title {
   font-family: 'for', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   line-height: .8;
   text-transform: uppercase;
   text-align: center;
 
   @media (max-width: 1700px) {
-    font-size: 35px;
+    font-size: 25px;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (max-width: 600px) {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
   }
 
   @media (max-width: 360px) {
     margin-bottom: 0px;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 .apart__modal__image {
-  margin: 30px auto 40px;
+  margin: 20px auto 30px;
   max-width: 520px;
   object-fit: contain;
   width: 100%;
@@ -187,8 +209,21 @@
   @media (max-width: 1700px) {
     max-width: 400px;
     margin: 10px auto 30px;
+    max-height: 330px;
   }
 
+  @media (max-width: 600px) {
+    max-height: 270px;
+  }
+
+  @media (max-width: 390px) {
+    max-height: 240px;
+  }
+
+  @media (max-width: 350px) {
+    max-height: 200px;
+    margin: 5px auto 15px;
+  }
 }
 
 .apart__modal__info {
@@ -208,9 +243,9 @@
 }
 
 .apart__modal__item {
-  margin: 0 auto 10px;
+  margin: 0 auto 7px;
   max-width: 170px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'enceReg', sans-serif;
   justify-content: space-between;
   display: flex;
@@ -220,7 +255,7 @@
   }
 
   @media (max-width: 1700px) {
-    font-size: 17px;
+    font-size: 16px;
     max-width: 150px;
   }
 
@@ -230,23 +265,32 @@
     max-width: 120px;
     width: 100%;
   }
+
+  @media (max-width: 390px) {
+    font-size: 13px;
+  }
 }
 
 .apart__modal__ploshad {
   font-family: 'for', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   line-height: .8;
   text-align: center;
-  margin: 30px 0 50px;
+  margin: 10px 0 30px;
 
   @media (max-width: 1700px) {
-    font-size: 25px;
-    margin: 15px 0 30px;
+    font-size: 22px;
+    margin: 10px 0 15px;
   }
 
   @media (max-width: 600px) {
     font-size: 18px;
     margin: 10px 0 20px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 16px;
+    margin: 5px 0 10px;
   }
 }
 
