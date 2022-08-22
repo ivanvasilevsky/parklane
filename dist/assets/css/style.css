@@ -1808,6 +1808,9 @@ a.footer__right__item {
   -o-transition: linear 0.6s;
   transition: linear 0.6s;
   max-height: 1000px;
+  -webkit-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+          transform: translateY(5%);
 }
 
 .apart__modal__main {
@@ -1854,6 +1857,15 @@ a.footer__right__item {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   pointer-events: all;
+}
+
+.apart__modal.active .apart__modal__inner {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .apart__modal.active--form .apart__modal__main {
@@ -2063,9 +2075,24 @@ a.footer__right__item {
   pointer-events: all;
 }
 
+.map__modal.active .map__modal__inner {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .map__modal__inner {
   background-color: #ffffff;
   padding: 30px;
+  -webkit-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+          transform: translateY(5%);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .map__modal__cross {
@@ -2129,6 +2156,15 @@ a.footer__right__item {
   pointer-events: all;
 }
 
+.mobile__modal.active .mobile__modal__inner {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .mobile__modal__inner {
   overflow: hidden;
   overflow-y: auto;
@@ -2142,6 +2178,9 @@ a.footer__right__item {
   -o-transition: linear 0.6s;
   transition: linear 0.6s;
   max-height: 1000px;
+  -webkit-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+          transform: translateY(5%);
 }
 
 .mobile__modal__house {
@@ -2244,7 +2283,6 @@ a.footer__right__item {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  pointer-events: all;
 }
 
 .plan__modal {

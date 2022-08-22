@@ -24,6 +24,7 @@
   padding: 20px 20px 40px;
   transition: linear .6s;
   max-height: 1000px;
+  transform: translateY(5%);
 
   @media (max-width: 1700px) {
     max-width: 650px;
@@ -70,6 +71,11 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+
+    & .apart__modal__inner {
+      transform: translateY(0%);
+      transition: all .4s;
+    }
   }
 
   &.active--form {
@@ -341,12 +347,19 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+
+    & .map__modal__inner {
+      transform: translateY(0%);
+      transition: .4s;
+    }
   }
 }
 
 .map__modal__inner {
   background-color: $white;
-  padding: 30px            ;
+  padding: 30px;
+  transform: translateY(5%);
+  transition: .2s;
 
   @media (max-width: 1700px) {
     max-width: 890px;
@@ -412,6 +425,11 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+
+    & .mobile__modal__inner {
+      transform: translateY(0%);
+      transition: .4s;
+    }
   }
 }
 
@@ -426,6 +444,7 @@
   padding: 20px;
   transition: linear .6s;
   max-height: 1000px;
+  transform: translateY(5%);
 
 
   @media (max-width: 600px) {
@@ -533,7 +552,6 @@
   transform: scale(1);
   opacity: 1;
   transition: .5s;
-  pointer-events: all;
 
   @media (max-width: 340px) {
     font-size: 13px;
