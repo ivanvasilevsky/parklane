@@ -228,10 +228,10 @@ function planModalItemActive(name) {
 const sectionsBtns = document.querySelectorAll('.room');
 const twoEtagBtn = document.querySelector('.apart__modal__etaj');
 let apartNumber = 0;
-
 sectionsBtns.forEach((item, num) => {
   item.addEventListener('click', (e) => {
     apartModalInfo(num, 'sections');
+
     planEtajModal.classList.remove('active');
     apartModal.classList.add('active');
 
@@ -317,4 +317,81 @@ function apartModalInfo(num, type) {
 }
 
 
-console.log();
+//mobile modal etaj
+
+const modalItem = document.querySelectorAll('.plan__modal__item');
+const mobileItem = document.querySelectorAll('.mobile__modal__house__etaj__item');
+
+function mobileModalBtsHidden() {
+  mobileItem.forEach(item => {
+    item.classList.remove('active');
+  });
+}
+
+mobileItem.forEach(item => {
+  item.addEventListener('click', () => {
+    let mobileModalBottom = item.parentNode.parentNode.parentNode.querySelector('.mobile__modal__house__bottom')
+    mobileModalBottomAll = document.querySelectorAll('.mobile__modal__house__bottom');
+    mobileModalBottomAll.forEach(item => {
+      item.innerHTML = '';
+    });
+
+    mobileItemActivate(item.classList[1], mobileModalBottom)
+    mobileModalBtsHidden()
+    item.classList.add('active');
+
+
+
+    mobileModalBottom.innerHTML += '';
+
+    mobileEtajBtnsActive()
+  })
+});
+
+function mobileItemActivate(etajName, bottomDiv) {
+  modalItem.forEach(item => {
+    if (item.classList[1] == etajName) {
+      let modalRooms = item.childNodes[1].parentNode.querySelectorAll('.room');
+
+      modalRooms.forEach((item, i) => {
+        let ploshadItem = item.childNodes[1].parentNode.querySelector('input[name="ploshad"]');
+        bottomDiv.innerHTML += `
+          <div class="mobile__modal__house__bottom__btn ${item.classList[1]}">Квартира ${i + 1} <br>${ploshadItem.value}м2</div>
+        `;
+      })
+    }
+  })
+}
+
+
+//mobile modal apart
+
+const mobileModal = document.querySelector('.mobile__modal');
+const mobileModalActivate = document.querySelector('.plan__image__mobile');
+const mobileModalCross = document.querySelector('.plan__modal__cross');
+
+mobileModalActivate.addEventListener('click', () => {
+  mobileModal.classList.add('active');
+});
+
+mobileModalCross.addEventListener('click', () => {
+  mobileModal.classList.remove('active');
+});
+
+function mobileEtajBtnsActive() {
+  let mobileEtajBtns = document.querySelectorAll('.mobile__modal__house__bottom__btn');
+
+  mobileEtajBtns.forEach(item => {
+    item.addEventListener('click', () => {
+
+      sectionsBtns.forEach((itemInner, i) => {
+        if (itemInner.classList[1] == item.classList[1]) {
+          apartModalInfo(i, 'sections');
+          mobileModal.classList.remove('active');
+          apartModal.classList.add('active');
+        }
+      });
+
+    });
+  });
+}
