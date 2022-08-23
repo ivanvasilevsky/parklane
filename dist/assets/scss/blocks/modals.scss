@@ -276,6 +276,11 @@
   @media (max-width: 390px) {
     font-size: 13px;
   }
+
+  @media (max-width: 350px) {
+    font-size: 11px;
+    margin: 0 auto 5px;
+  }
 }
 
 .apart__modal__ploshad {

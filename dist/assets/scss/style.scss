@@ -101,10 +101,11 @@ input {
 
 .owl-stage {
 	display: flex;
+	min-width: 1490px !important;
 }
 
 .owl-stage-outer {
-   width: 100%;
+  width: 100%;
 }
 
 .disabled {

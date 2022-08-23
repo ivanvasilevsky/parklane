@@ -119,6 +119,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 1490px !important;
 }
 
 .owl-stage-outer {
@@ -4445,6 +4446,11 @@ a.footer__right__item {
   .apart__modal__image {
     max-height: 200px;
     margin: 5px auto 15px;
+  }
+
+  .apart__modal__item {
+    font-size: 11px;
+    margin: 0 auto 5px;
   }
 
   .apart__modal__ploshad {

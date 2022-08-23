@@ -388,6 +388,7 @@ mobileModalCross.addEventListener('click', () => {
   mobileModal.classList.remove('active');
   body.classList.remove('no-scroll');
   mobileModalBtsHidden()
+  mobileModalItemHidden()
   setTimeout(() => {
     mobileModalBottomAll.forEach(item => {
       item.innerHTML = '';
