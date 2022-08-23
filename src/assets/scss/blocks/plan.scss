@@ -63,10 +63,34 @@
   }
 }
 
+@keyframes planImage {
+  0% {
+    opacity: 1;
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  62% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .plan__image__mobile {
+  opacity: 1;
   position: relative;
   z-index: 100;
   display: none;
+  animation: planImage infinite 7s;
 
   @media (max-width: 800px) {
     display: block;

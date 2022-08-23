@@ -511,7 +511,7 @@ input[type=radio]:checked::after {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background-color: #231f33;
+  background-color: #35374c;
   -webkit-transform-origin: top;
       -ms-transform-origin: top;
           transform-origin: top;
@@ -1496,10 +1496,57 @@ input[type=radio]:checked::after {
   z-index: 100;
 }
 
+@-webkit-keyframes planImage {
+  0% {
+    opacity: 1;
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  62% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes planImage {
+  0% {
+    opacity: 1;
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  62% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .plan__image__mobile {
+  opacity: 1;
   position: relative;
   z-index: 100;
   display: none;
+  -webkit-animation: planImage infinite 7s;
+          animation: planImage infinite 7s;
 }
 
 .plan__apart__left {
@@ -1769,6 +1816,11 @@ a.footer__right__item {
   color: #cbb45e;
 }
 
+.footer__bottom {
+  background: url(../img/bg/map_bg.jpg) no-repeat center/cover;
+  height: 250px;
+}
+
 .apart__modal {
   position: fixed;
   width: 100vw;
@@ -1857,6 +1909,7 @@ a.footer__right__item {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   pointer-events: all;
+  z-index: 5000;
 }
 
 .apart__modal.active .apart__modal__inner {
@@ -2073,6 +2126,7 @@ a.footer__right__item {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   pointer-events: all;
+  z-index: 5000;
 }
 
 .map__modal.active .map__modal__inner {
@@ -2154,6 +2208,7 @@ a.footer__right__item {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   pointer-events: all;
+  z-index: 5000;
 }
 
 .mobile__modal.active .mobile__modal__inner {
@@ -2362,6 +2417,7 @@ a.footer__right__item {
   -o-transition: all 0.4s;
   transition: all 0.4s;
   pointer-events: all;
+  z-index: 5000;
 }
 
 .plan__modal.active .plan__modal__inner {
@@ -3304,6 +3360,10 @@ a.footer__right__item {
     font-size: 32px;
   }
 
+  .footer__bottom {
+    height: 200px;
+  }
+
   .apart__modal__inner {
     max-width: 650px;
     padding: 20px 20px 30px;
@@ -3901,6 +3961,12 @@ a.footer__right__item {
 
   .option__slide {
     padding-right: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .footer__bottom {
+    background-position: 67% 0%;
   }
 }
 

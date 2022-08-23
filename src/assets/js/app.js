@@ -405,6 +405,12 @@ function mobileEtajBtnsActive() {
         if (itemInner.classList[1] == item.classList[1]) {
           apartModalInfo(i, 'sections');
           mobileModal.classList.remove('active');
+          mobileModalBtsHidden()
+          setTimeout(() => {
+            mobileModalBottomAll.forEach(item => {
+              item.innerHTML = '';
+            });
+          }, 500);
           apartModal.classList.add('active');
         }
       });
@@ -412,3 +418,30 @@ function mobileEtajBtnsActive() {
     });
   });
 }
+
+
+
+//footer map
+const footerMap = document.querySelector('.footer__bottom');
+let footerMapI = 1;
+
+footerMap.addEventListener('mouseover', () => {
+  if (footerMapI == 1) {
+    footerMap.innerHTML = '<iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd6c237ac4b6b079751760a7ae5910a1290ed4c1fc3ea3e9ba5ac6f4f7527882&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>';
+    footerMapI = 2;
+  }
+})
+
+//start scroll
+
+const scrollBtn = document.querySelector('.header__down__btn');
+
+scrollBtn.addEventListener('click', () => {
+  document.querySelector('.gallery').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+})
+
+
+//form checked

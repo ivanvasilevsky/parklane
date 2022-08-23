@@ -118,3 +118,16 @@ a.footer__right__item {
 		font-size: 22px;
 	}
 }
+
+.footer__bottom {
+	background: url(../img/bg/map_bg.jpg) no-repeat center / cover;
+	height: 250px;
+
+	@media (max-width: 1700px) {
+		height: 200px;
+	}
+
+	@media (max-width: 720px) {
+		background-position: 67% 0%;
+	}
+}

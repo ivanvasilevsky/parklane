@@ -71,6 +71,7 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+    z-index: 5000;
 
     & .apart__modal__inner {
       transform: translateY(0%);
@@ -347,6 +348,7 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+    z-index: 5000;
 
     & .map__modal__inner {
       transform: translateY(0%);
@@ -425,12 +427,14 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+    z-index: 5000;
 
     & .mobile__modal__inner {
       transform: translateY(0%);
       transition: .4s;
     }
   }
+
 }
 
 .mobile__modal__inner {
@@ -492,6 +496,7 @@
   &.active {
     max-height: 350px;
     transition: .5s;
+
 
     &:last-child {
       max-height: 550px;
@@ -626,6 +631,7 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+    z-index: 5000;
 
     .plan__modal__inner {
       transform: translateY(0%);
