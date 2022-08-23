@@ -452,14 +452,51 @@
   }
 }
 
+.mobile__modal__cross {
+  max-width: 22px;
+  margin-left: auto;
+  transition: .2s;
+  position: relative;
+  z-index: 200;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: .2s;
+  }
+
+  @media (max-width: 1700px) {
+    max-width: 18px;
+  }
+
+  @media (max-width: 800px) {
+    max-width: 24px;
+  }
+}
+
 .mobile__modal__house {
   margin-top: 20px;
   border-bottom: 1px solid $gray;
   padding-bottom: 20px;
 
+  overflow: hidden;
+  max-height: 150px;
+  transition: .05s;
+
   &:last-child {
     padding-bottom: 0px;
     border: none;
+    max-height: 180px;
+  }
+
+  &.active {
+    max-height: 350px;
+    transition: .5s;
+
+    &:last-child {
+      max-height: 550px;
+      transition: .8s;
+    }
   }
 }
 
@@ -589,6 +626,11 @@
     visibility: visible;
     transition: all .4s;
     pointer-events: all;
+
+    .plan__modal__inner {
+      transform: translateY(0%);
+      transition: .2s;
+    }
   }
 }
 
@@ -601,6 +643,10 @@
   padding: 20px;
   transition: linear .6s;
   max-height: 1000px;
+  transform: translateY(5%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 
   @media (max-width: 600px) {
@@ -664,6 +710,18 @@
 
 .plan__modal__item__image {
   width: 100%;
+}
+
+.plan__modal__blocks {
+  @media (max-width: 1150px) {
+    position: relative;
+    transform: scale(.8);
+    width: 1040px;
+  }
+
+  @media (max-width: 800px) {
+    transform: scale(.6);
+  }
 }
 
 .room {

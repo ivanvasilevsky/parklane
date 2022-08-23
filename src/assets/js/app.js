@@ -321,9 +321,16 @@ function apartModalInfo(num, type) {
 
 const modalItem = document.querySelectorAll('.plan__modal__item');
 const mobileItem = document.querySelectorAll('.mobile__modal__house__etaj__item');
+const mobileItemMain = document.querySelectorAll('.mobile__modal__house');
 
 function mobileModalBtsHidden() {
   mobileItem.forEach(item => {
+    item.classList.remove('active');
+  });
+}
+
+function mobileModalItemHidden() {
+  mobileItemMain.forEach(item => {
     item.classList.remove('active');
   });
 }
@@ -340,6 +347,8 @@ mobileItem.forEach(item => {
     mobileModalBtsHidden()
     item.classList.add('active');
 
+    mobileModalItemHidden()
+    item.parentNode.parentNode.parentNode.classList.add('active');
 
 
     mobileModalBottom.innerHTML += '';
@@ -368,14 +377,22 @@ function mobileItemActivate(etajName, bottomDiv) {
 
 const mobileModal = document.querySelector('.mobile__modal');
 const mobileModalActivate = document.querySelector('.plan__image__mobile');
-const mobileModalCross = document.querySelector('.plan__modal__cross');
+const mobileModalCross = document.querySelector('.mobile__modal__cross');
 
 mobileModalActivate.addEventListener('click', () => {
   mobileModal.classList.add('active');
+  body.classList.add('no-scroll');
 });
 
 mobileModalCross.addEventListener('click', () => {
   mobileModal.classList.remove('active');
+  body.classList.remove('no-scroll');
+  mobileModalBtsHidden()
+  setTimeout(() => {
+    mobileModalBottomAll.forEach(item => {
+      item.innerHTML = '';
+    });
+  }, 500);
 });
 
 function mobileEtajBtnsActive() {
