@@ -445,3 +445,29 @@ scrollBtn.addEventListener('click', () => {
 
 
 //form checked
+const checkAll = document.querySelectorAll('input[type="checkbox"]');
+
+checkAll.forEach(item => {
+  item.addEventListener('change', () => {
+    let formBtn = item.parentNode.parentNode.querySelector('.btn');
+    if (item.checked) {
+      formBtn.classList.remove('noclick');
+    } else {
+      formBtn.classList.add('noclick');
+    }
+  })
+})
+
+
+//modal outclick hidden
+const modalAll = document.querySelectorAll('.modal');
+
+modalAll.forEach(item => {
+  item.addEventListener('click', (e) => {
+    let target = e.target;
+    if (!item.childNodes[1].contains(target)) {
+      item.classList.remove('active')
+      body.classList.remove('no-scroll')
+    }
+  })
+})
