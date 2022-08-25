@@ -3418,6 +3418,44 @@ a.footer__right__item {
   padding-left: 110px;
 }
 
+.object__slider {
+  overflow: hidden;
+}
+
+.object__slider .owl-prev {
+  display: none;
+}
+
+.object__slider .owl-next {
+  display: none;
+}
+
+.object__slider .owl-dots {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.object__slider .owl-dot {
+  margin: 0 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.object__slider .owl-dot.active {
+  background-color: #cbb45e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .object__slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3428,6 +3466,7 @@ a.footer__right__item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .object__left {
@@ -3519,6 +3558,8 @@ a.footer__right__item {
 }
 
 .object__btn {
+  position: relative;
+  z-index: 100;
   margin-left: auto;
   margin-top: 100px;
   display: -webkit-box;
@@ -4048,16 +4089,56 @@ a.footer__right__item {
     line-height: 1;
   }
 
+  .object__inner {
+    padding-bottom: 60px;
+  }
+
   .object__block {
     padding-left: 70px;
   }
 
+  .object__image__link {
+    max-width: 400px;
+  }
+
+  .object__info__item__line {
+    height: 20px;
+  }
+
+  .object__right {
+    padding-right: 100px;
+    max-width: 600px;
+  }
+
+  .object__info__item {
+    font-size: 17px;
+  }
+
+  .object__title {
+    font-size: 30px;
+  }
+
+  .object__subtitle {
+    font-size: 40px;
+  }
+
+  .object__right__block {
+    margin-top: 30px;
+  }
+
+  .object__right__info {
+    margin-bottom: 20px;
+  }
+
+  .object__link {
+    margin-top: 20px;
+  }
+
   .object__btn {
-    width: 120px;
-    height: 120px;
-    top: 30%;
-    left: -180px;
-    padding-bottom: 8px;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    margin-top: 0px;
   }
 }
 
@@ -4168,6 +4249,15 @@ a.footer__right__item {
 
   .benef__m__inner {
     padding: 120px 0;
+  }
+
+  .object__block {
+    padding-left: 0;
+  }
+
+  .object__right {
+    padding-right: 0px;
+    max-width: 400px;
   }
 }
 
@@ -4459,6 +4549,37 @@ a.footer__right__item {
     line-height: 1;
     margin-top: 15px;
   }
+
+  .object__image__link {
+    max-width: 300px;
+  }
+
+  .object__left__bottom {
+    padding: 0;
+  }
+
+  .object__right {
+    margin-top: 20px;
+    max-width: 290px;
+  }
+
+  .object__info__item {
+    font-size: 15px;
+  }
+
+  .object__subtitle {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+
+  .object__right__block .etap__way {
+    max-height: 140px !important;
+  }
+
+  .object__right__info__item {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -4671,16 +4792,6 @@ a.footer__right__item {
   .benef__m::after {
     height: 60px;
   }
-
-  .object__btn {
-    padding: 0;
-    line-height: 0;
-    width: 34px;
-    height: 34px;
-    top: 38%;
-    left: -43px;
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -4756,6 +4867,17 @@ a.footer__right__item {
   }
 }
 
+@media (max-width: 700px) {
+  .object__inner {
+    padding-bottom: 20px;
+  }
+
+  .object__slider .owl-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 @media (max-width: 690px) {
   .etap__right__text span {
     margin: 0;
@@ -4790,6 +4912,41 @@ a.footer__right__item {
   .option__btn {
     width: calc(50% - 10px);
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .object__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .object__left {
+    margin: 0 auto;
+  }
+
+  .object__left__bottom {
+    margin: 20px 0;
+  }
+
+  .object__right {
+    margin: 0 auto;
+  }
+
+  .object__link {
+    font-size: 16px;
+  }
+
+  .object__btn {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    margin-top: -50px;
   }
 }
 

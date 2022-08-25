@@ -63,6 +63,15 @@ $(document).ready(function () {
     autoWidth: true,
     smartSpeed: 600,
   });
+
+  $(".object__slider").owlCarousel({
+    items: 1,
+    dots: true,
+    nav: false,
+    loop: true,
+    autoWidth: false,
+    smartSpeed: 600,
+  });
 });
 
 
