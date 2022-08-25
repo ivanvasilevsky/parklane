@@ -112,6 +112,14 @@ input {
 	display: block;
 }
 
+input.error {
+	color: 1px solid brown;
+}
+
+input.error::placeholder {
+	color: brown;
+}
+
 /* Font-family */
 @import "fonts.scss";
 

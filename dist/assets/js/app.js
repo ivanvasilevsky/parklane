@@ -274,7 +274,7 @@ function apartModalInfo(num, type) {
   let apartModalPloshad = document.querySelector('.apart__modal__ploshad > span');
   let apartModalInfoBlock = document.querySelector('.apart__modal__info');
   let apartModalImage = document.querySelector('.apart__modal__image');
-  let apartModalTitle = document.querySelector('input[name="title"]');
+  let apartModalTitle = document.querySelector('.apart__modal__form__form > input[name="title"]');
 
   if (type == 'options') {
     aptartInputs = apartBtns[num].parentNode.querySelectorAll('input[name="info"]');
@@ -379,10 +379,12 @@ const mobileModal = document.querySelector('.mobile__modal');
 const mobileModalActivate = document.querySelector('.plan__image__mobile');
 const mobileModalCross = document.querySelector('.mobile__modal__cross');
 
-mobileModalActivate.addEventListener('click', () => {
-  mobileModal.classList.add('active');
-  body.classList.add('no-scroll');
-});
+if (mobileModalActivate) {
+  mobileModalActivate.addEventListener('click', () => {
+    mobileModal.classList.add('active');
+    body.classList.add('no-scroll');
+  });
+}
 
 mobileModalCross.addEventListener('click', () => {
   mobileModal.classList.remove('active');
@@ -469,6 +471,23 @@ modalAll.forEach(item => {
     if (!item.childNodes[1].contains(target)) {
       item.classList.remove('active')
       body.classList.remove('no-scroll')
+      mobileModalBtsHidden()
+      mobileModalItemHidden()
     }
   })
 })
+
+
+//download file
+const linkDownload = document.querySelector('.file__hidden');
+
+$(document).on('af_complete', function (event, response) {
+  if (response.form[0].classList[0] == 'header__form__form' && response.success == true) {
+    linkDownload.click();
+  }
+
+  modalAll.forEach(item => {
+    item.classList.remove('active')
+    body.classList.remove('no-scroll')
+  })
+});
