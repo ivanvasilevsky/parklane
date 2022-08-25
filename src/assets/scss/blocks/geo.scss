@@ -1,0 +1,54 @@
+.geo {
+
+  & .etap__right {
+    max-width: 920px !important;
+    margin-left: auto;
+  }
+
+  & .main__title {
+    position: relative;
+
+    &::after {
+      content: 'Амина';
+      text-transform: initial;
+      position: absolute;
+      bottom: -70px;
+      left: calc(100% - 80px);
+
+      font-size: 100px;
+      font-family: 'carolina', sans-serif;
+      color: $yel;
+
+
+      @media (max-width: 1700px) {
+        font-size: 70px;
+        bottom: -50px;
+      }
+
+      @media (max-width: 800px) {
+        font-size: 45px;
+        bottom: -35px;
+        left: calc(100% - 40px);
+      }
+
+      @media (max-width: 800px) {
+        font-size: 45px;
+        bottom: -45px;
+        left: calc(100% - 120px);
+      }
+
+    }
+  }
+}
+
+.geo__inner {
+  padding: 145px 0 80px;
+
+  @media (max-width: 1700px) {
+    padding: 60px 0 0px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 30px 0 35px;
+  }
+}

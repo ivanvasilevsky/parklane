@@ -1,0 +1,140 @@
+.object__inner {
+  padding-bottom: 120px;
+}
+
+.object__block {
+  padding-left: 110px;
+
+  @media (max-width: 1700px) {
+    padding-left: 70px;
+  }
+}
+
+.object__slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.object__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.object__left__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  margin-top: 30px;
+}
+
+.object__info__item__line {
+  height: 28px;
+  width: 1px;
+  background-color: $purp_wt2;
+}
+
+.object__right {
+  max-width: 550px;
+  margin-top: 75px;
+}
+
+.object__info__item {
+  font-size: 20px;
+}
+
+.object__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'enceDem', sans-serif;
+}
+
+.object__subtitle {
+  font-size: 50px;
+  font-family: 'carolina', sans-serif;
+  color: $yel;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.object__right__block {
+  display: flex;
+  margin-top: 90px;
+
+  & .etap__way {
+    max-height: 180px !important;
+  }
+}
+
+.object__right__info {
+  padding-bottom: 40px;
+}
+
+.object__right__info__item {
+  font-size: 22px;
+  line-height: 1.4;
+
+  & span {
+    font-family: 'enceDem', sans-serif;
+  }
+}
+
+.object__link {
+  display: block;
+  margin-top: 45px;
+  color: $yel;
+  text-decoration: underline;
+  font-size: 18px;
+  width: max-content;
+}
+
+.object__btn {
+  margin-left: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 2px $yel;
+  border-radius: 50%;
+  background: none;
+  color: $yel;
+  width: 190px;
+  height: 190px;
+  font-size: 25px;
+  font-weight: 100;
+  transition: .2s;
+
+  &:hover {
+    background-color: $yel;
+    opacity: .7;
+    color: $white;
+    transition: .2s;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: .9;
+    transition: .2s;
+  }
+
+  @media (max-width: 1700px) {
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    left: -180px;
+    padding-bottom: 8px;
+  }
+
+  @media (max-width: 770px) {
+    padding: 0;
+    line-height: 0;
+    width: 34px;
+    height: 34px;
+    top: 38%;
+    left: -43px;
+    font-size: 22px;
+  }
+}

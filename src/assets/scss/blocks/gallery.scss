@@ -40,7 +40,7 @@
     margin-right: 25px;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 800px) {
     max-width: 26px;
     margin-top: 0;
     margin-right: 15px;
@@ -56,8 +56,13 @@
     font-size: 60px;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 800px) {
     font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 370px) {
+    font-size: 25px;
     margin-bottom: 0;
   }
 }
@@ -69,7 +74,7 @@
     font-size: 30px;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 800px) {
     font-size: 22px;
   }
 }
