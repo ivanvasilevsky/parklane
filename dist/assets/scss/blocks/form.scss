@@ -206,3 +206,73 @@
     display: none;
   }
 }
+
+.form__title.main {
+  display: none;
+  font-weight: 100;
+}
+
+.form__subtitle.main {
+  display: none;
+}
+
+.form__minisubtitle.main {
+  display: none;
+  max-width: 340px;
+}
+
+.form__woman {
+  display: none;
+  bottom: 0px;
+}
+
+.page.main {
+  & .form {
+    background: url(../img/bg/fon_forma2.jpg) no-repeat center / cover;
+    background-position: 0 0px;
+
+    &::before {
+      clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+      background-color: $white;
+    }
+
+    &::after {
+      clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+      background-color: $white;
+    }
+  }
+
+
+  & .form__man {
+    display: none;
+  }
+
+  & .form__man.form__woman {
+    display: block;
+  }
+
+  .form__title {
+    display: none;
+  }
+
+  .form__subtitle {
+    display: none;
+  }
+
+  .form__minisubtitle {
+    display: none;
+  }
+
+
+  .form__title.main {
+    display: inherit;
+  }
+
+  .form__subtitle.main {
+    display: inherit;
+  }
+
+  .form__minisubtitle.main {
+    display: inherit;
+  }
+}

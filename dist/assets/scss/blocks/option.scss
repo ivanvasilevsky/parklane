@@ -390,4 +390,22 @@
   & .option__btns {
     display: none;
   }
+
+  & .option {
+    &::after {
+      display: none;
+    }
+  }
+
+  & .option__inner {
+    padding: 240px 0 100px;
+
+    @media (max-width: 1700px) {
+      padding: 100px 0 70px;
+    }
+
+    @media (max-width: 550px) {
+      padding: 70px 0 45px;
+    }
+  }
 }

@@ -698,6 +698,7 @@ input[type=radio]:checked::after {
 }
 
 .header__maintitle {
+  font-weight: 100;
   font-size: 120px;
   text-transform: uppercase;
   font-family: "for", sans-serif;
@@ -915,6 +916,7 @@ input[type=radio]:checked::after {
 .main__title {
   font-size: 90px;
   margin-bottom: -5px;
+  font-weight: 100;
 }
 
 .main__subtitle {
@@ -1241,6 +1243,14 @@ input[type=radio]:checked::after {
   display: none;
 }
 
+.page.main .option::after {
+  display: none;
+}
+
+.page.main .option__inner {
+  padding: 240px 0 100px;
+}
+
 .etap {
   background-color: #efeff1;
   padding: 50px 0 105px;
@@ -1408,12 +1418,12 @@ input[type=radio]:checked::after {
   margin-left: 30px;
 }
 
-.etap.about {
+.page.main .etap {
   background-color: #ffffff;
   position: relative;
 }
 
-.etap.about::after {
+.page.main .etap::after {
   content: "";
   width: 100%;
   height: 135px;
@@ -1425,24 +1435,24 @@ input[type=radio]:checked::after {
   background-color: #efeff1;
 }
 
-.etap.about .etap__inner {
-  padding: 100px 0 235px;
+.page.main .etap__inner {
+  padding: 0px 0 135px;
 }
 
-.etap.about .etap__slide::after {
+.page.main .etap__slide::after {
   content: "Об оъекте";
 }
 
-.etap.about .etap__way {
+.page.main .etap__way {
   max-height: 160px;
   padding: 0;
 }
 
-.etap.about .etap__way__line {
+.page.main .etap__way__line {
   height: calc(100% - 25px);
 }
 
-.etap.about .etap__right {
+.page.main .etap__right {
   max-width: 520px;
   height: inherit !important;
 }
@@ -1565,6 +1575,74 @@ input[type=radio]:checked::after {
   position: absolute;
   bottom: -200px;
   right: 0;
+}
+
+.form__title.main {
+  display: none;
+  font-weight: 100;
+}
+
+.form__subtitle.main {
+  display: none;
+}
+
+.form__minisubtitle.main {
+  display: none;
+  max-width: 340px;
+}
+
+.form__woman {
+  display: none;
+  bottom: 0px;
+}
+
+.page.main .form {
+  background: url(../img/bg/fon_forma2.jpg) no-repeat center/cover;
+  background-position: 0 0px;
+}
+
+.page.main .form::before {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  background-color: #ffffff;
+}
+
+.page.main .form::after {
+  -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  background-color: #ffffff;
+}
+
+.page.main .form__man {
+  display: none;
+}
+
+.page.main .form__man.form__woman {
+  display: block;
+}
+
+.page.main .form__title {
+  display: none;
+}
+
+.page.main .form__subtitle {
+  display: none;
+}
+
+.page.main .form__minisubtitle {
+  display: none;
+}
+
+.page.main .form__title.main {
+  display: inherit;
+}
+
+.page.main .form__subtitle.main {
+  display: inherit;
+}
+
+.page.main .form__minisubtitle.main {
+  display: inherit;
 }
 
 .benef__inner {
@@ -3387,6 +3465,10 @@ a.footer__right__item {
     margin-bottom: 3px;
   }
 
+  .page.main .option__inner {
+    padding: 100px 0 70px;
+  }
+
   .etap {
     padding: 20px 100px 80px;
   }
@@ -3442,19 +3524,19 @@ a.footer__right__item {
     font-size: 45px;
   }
 
-  .etap.about::after {
+  .page.main .etap::after {
     height: 90px;
   }
 
-  .etap.about .etap__inner {
-    padding: 60px 100px 140px;
+  .page.main .etap__inner {
+    padding: 0px 100px 40px;
   }
 
-  .etap.about .etap__way {
+  .page.main .etap__way {
     max-height: 110px;
   }
 
-  .etap.about .etap__right {
+  .page.main .etap__right {
     max-width: 480px;
   }
 
@@ -3678,8 +3760,8 @@ a.footer__right__item {
     padding: 20px 0px 80px;
   }
 
-  .etap.about .etap__inner {
-    padding: 60px 0px 120px;
+  .page.main .etap__inner {
+    padding: 0px 0px 120px;
   }
 
   .form__inner {
@@ -3850,7 +3932,7 @@ a.footer__right__item {
     font-size: 30px;
   }
 
-  .etap.about .etap__right {
+  .page.main .etap__right {
     max-width: 300px;
   }
 
@@ -4143,7 +4225,7 @@ a.footer__right__item {
     height: 60px;
   }
 
-  .etap.about::after {
+  .page.main .etap::after {
     height: 60px;
   }
 
@@ -4213,7 +4295,7 @@ a.footer__right__item {
 }
 
 @media (max-width: 720px) {
-  .etap.about .etap__right {
+  .page.main .etap__right {
     margin-left: 20px;
   }
 
@@ -4446,8 +4528,8 @@ a.footer__right__item {
     display: inline-flex;
   }
 
-  .etap.about .etap__inner {
-    padding: 30px 0 75px;
+  .page.main .etap__inner {
+    padding: 0px 0 75px;
   }
 }
 
@@ -4481,6 +4563,10 @@ a.footer__right__item {
 
   .option__inner {
     padding: 70px 0 75px;
+  }
+
+  .page.main .option__inner {
+    padding: 70px 0 45px;
   }
 
   .benef__inner {
