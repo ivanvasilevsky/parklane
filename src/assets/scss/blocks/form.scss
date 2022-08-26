@@ -226,7 +226,7 @@
   bottom: 0px;
 }
 
-.page.main {
+.page.form_woman {
   & .form {
     background: url(../img/bg/fon_forma2.jpg) no-repeat center / cover;
     background-position: 0 0px;
@@ -278,5 +278,18 @@
 
   .form__minisubtitle.main {
     display: inherit;
+  }
+}
+
+.page.general {
+  & .form {
+
+    &::before {
+      background-color: $white;
+    }
+
+    &::after {
+      background-color: $white;
+    }
   }
 }

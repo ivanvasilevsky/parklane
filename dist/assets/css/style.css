@@ -500,6 +500,10 @@ input[type=radio]:checked::after {
   text-align: center;
 }
 
+.page.main .header__tilteblock {
+  margin: 70px auto 50px;
+}
+
 .header__down__btn {
   margin-bottom: 23px;
   width: 60px;
@@ -916,6 +920,60 @@ input[type=radio]:checked::after {
 
 .header__info__m__minititle {
   font-size: 30px;
+}
+
+.page.general .etap__slide::after {
+  content: "О компании" !important;
+}
+
+.page.general .header__info {
+  width: 290px;
+  height: 290px;
+  margin-left: auto;
+  -webkit-transform: inherit;
+      -ms-transform: inherit;
+          transform: inherit;
+  background-color: #443f5e;
+}
+
+.page.general .header__info::after {
+  display: none;
+}
+
+.page.general .header__tilteblock {
+  margin: 40px auto 25px;
+}
+
+.page.general .header__info__text__g {
+  font-size: 23px;
+  font-family: "for", sans-serif;
+  color: #cbb45e;
+}
+
+.page.general .header__info__text__g span {
+  font-size: 80px;
+}
+
+.header__main__logo__g {
+  margin: 0 auto 80px;
+  max-width: 105px;
+  width: 100%;
+}
+
+.header__main__subtitle__g {
+  font-size: 40px;
+  font-family: "for", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header__maintitle__g {
+  font-size: 120px;
+  font-family: "for", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .gallery {
@@ -1467,7 +1525,7 @@ input[type=radio]:checked::after {
 }
 
 .page.main .etap__inner {
-  padding: 0px 0 135px;
+  padding: 0 0 135px 110px;
 }
 
 .page.main .etap__slide::after {
@@ -1627,53 +1685,61 @@ input[type=radio]:checked::after {
   bottom: 0px;
 }
 
-.page.main .form {
+.page.form_woman .form {
   background: url(../img/bg/fon_forma2.jpg) no-repeat center/cover;
   background-position: 0 0px;
 }
 
-.page.main .form::before {
+.page.form_woman .form::before {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
   background-color: #ffffff;
 }
 
-.page.main .form::after {
+.page.form_woman .form::after {
   -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
   background-color: #ffffff;
 }
 
-.page.main .form__man {
+.page.form_woman .form__man {
   display: none;
 }
 
-.page.main .form__man.form__woman {
+.page.form_woman .form__man.form__woman {
   display: block;
 }
 
-.page.main .form__title {
+.page.form_woman .form__title {
   display: none;
 }
 
-.page.main .form__subtitle {
+.page.form_woman .form__subtitle {
   display: none;
 }
 
-.page.main .form__minisubtitle {
+.page.form_woman .form__minisubtitle {
   display: none;
 }
 
-.page.main .form__title.main {
+.page.form_woman .form__title.main {
   display: inherit;
 }
 
-.page.main .form__subtitle.main {
+.page.form_woman .form__subtitle.main {
   display: inherit;
 }
 
-.page.main .form__minisubtitle.main {
+.page.form_woman .form__minisubtitle.main {
   display: inherit;
+}
+
+.page.general .form::before {
+  background-color: #ffffff;
+}
+
+.page.general .form::after {
+  background-color: #ffffff;
 }
 
 .benef__inner {
@@ -3304,8 +3370,7 @@ a.footer__right__item {
   position: relative;
 }
 
-.geo .main__title::after {
-  content: "Амина";
+.geo .main__title span {
   text-transform: initial;
   position: absolute;
   bottom: -70px;
@@ -3731,6 +3796,36 @@ a.footer__right__item {
     font-size: 20px;
   }
 
+  .page.general .header__info {
+    width: 250px;
+    height: 250px;
+    -webkit-transform: translateX(-80px);
+        -ms-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+
+  .page.general .header__info__text__g span {
+    font-size: 60px;
+  }
+
+  .page.general .header__info__text__g {
+    font-size: 18px;
+  }
+
+  .header__main__logo__g {
+    margin: 0 auto 20px;
+    max-width: 95px;
+  }
+
+  .header__main__subtitle__g {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .header__maintitle__g {
+    font-size: 90px;
+  }
+
   .gallery__inner {
     padding: 60px 0 50px;
   }
@@ -3875,7 +3970,7 @@ a.footer__right__item {
   }
 
   .page.main .etap__inner {
-    padding: 0px 100px 40px;
+    padding: 0px 100px 40px 70px;
   }
 
   .page.main .etap__way {
@@ -4051,7 +4146,7 @@ a.footer__right__item {
     max-width: 18px;
   }
 
-  .geo .main__title::after {
+  .geo .main__title span {
     font-size: 70px;
     bottom: -50px;
   }
@@ -4197,7 +4292,7 @@ a.footer__right__item {
   }
 
   .page.main .etap__inner {
-    padding: 0px 0px 120px;
+    padding: 0px 0px 120px 70px;
   }
 
   .form__inner {
@@ -4303,6 +4398,13 @@ a.footer__right__item {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .page.general .header__info {
+    margin: 0 auto;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
   }
 
   .option__slides::after {
@@ -4598,6 +4700,10 @@ a.footer__right__item {
     font-size: 22px;
   }
 
+  .page.main .etap__inner {
+    padding: 0px 0px 120px 0px;
+  }
+
   .plan__image {
     display: none;
   }
@@ -4636,13 +4742,13 @@ a.footer__right__item {
             transform: scale(0.6);
   }
 
-  .geo .main__title::after {
+  .geo .main__title span {
     font-size: 45px;
     bottom: -35px;
     left: calc(100% - 40px);
   }
 
-  .geo .main__title::after {
+  .geo .main__title span {
     font-size: 45px;
     bottom: -45px;
     left: calc(100% - 120px);
@@ -4661,6 +4767,11 @@ a.footer__right__item {
 
   .header__down {
     bottom: -75px;
+  }
+
+  .page.main .header {
+    height: 90vh !important;
+    min-height: 650px !important;
   }
 
   .header__down__btn {
@@ -4719,6 +4830,11 @@ a.footer__right__item {
 
   .header__form__title {
     font-size: 18px;
+  }
+
+  .page.general .header {
+    height: 100vh !important;
+    min-height: 650px !important;
   }
 
   .gallery__slider .owl-next {
@@ -4868,6 +4984,14 @@ a.footer__right__item {
 }
 
 @media (max-width: 700px) {
+  .header__main__subtitle__g {
+    font-size: 20px;
+  }
+
+  .header__maintitle__g {
+    font-size: 50px;
+  }
+
   .object__inner {
     padding-bottom: 20px;
   }
@@ -4899,12 +5023,12 @@ a.footer__right__item {
     display: none;
   }
 
-  .page.main .form__man.form__woman {
+  .page.form_woman .form__man.form__woman {
     display: none;
   }
 
   .benef__m__inner {
-    padding: 80px 0 80px;
+    padding: 100px 0;
   }
 }
 
@@ -5010,7 +5134,6 @@ a.footer__right__item {
   }
 
   .etap__right__info__m {
-    font-size: 14px;
     line-height: 0.9;
   }
 
@@ -5124,6 +5247,14 @@ a.footer__right__item {
 
   .page.main .etap__inner {
     padding: 0px 0 75px;
+  }
+
+  .page.main .etap__slide::after {
+    left: -70px;
+  }
+
+  .page.main .etap__right {
+    max-width: 100%;
   }
 }
 
@@ -5301,6 +5432,31 @@ a.footer__right__item {
 
   .header__tilteblock {
     margin: 10px auto 20px;
+  }
+
+  .page.general .header {
+    min-height: 560px !important;
+  }
+
+  .page.general .header__info {
+    width: 200px;
+    height: 200px;
+  }
+
+  .page.general .header__info__text__g span {
+    font-size: 40px;
+  }
+
+  .page.general .header__info__text__g {
+    font-size: 16px;
+  }
+
+  .header__main__subtitle__g {
+    font-size: 18px;
+  }
+
+  .header__maintitle__g {
+    font-size: 40px;
   }
 
   .form__form {

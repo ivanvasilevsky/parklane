@@ -8,8 +8,7 @@
   & .main__title {
     position: relative;
 
-    &::after {
-      content: 'Амина';
+    & span {
       text-transform: initial;
       position: absolute;
       bottom: -70px;

@@ -78,6 +78,11 @@
     &::after {
       background-color: $white;
     }
+
+    @media (max-width: 770px) {
+      height: 90vh !important;
+      min-height: 650px !important;
+    }
   }
 
   & .header__down {
@@ -96,6 +101,10 @@
     max-width: 300px;
     margin: 0;
     text-align: center;
+  }
+
+  & .header__tilteblock {
+    margin: 70px auto 50px;
   }
 }
 
@@ -675,5 +684,135 @@
 
   @media (max-width: 350px) {
     font-size: 12px;
+  }
+}
+
+.page.general {
+  & .header {
+    @media (max-width: 770px) {
+      height: 100vh !important;
+      min-height: 650px !important;
+    }
+
+    @media (max-width: 390px) {
+      min-height: 560px !important;
+    }
+  }
+
+  & .etap__slide {
+    &::after {
+      content: 'О компании' !important;
+    }
+  }
+
+  & .header__info {
+    width: 290px;
+    height: 290px;
+    margin-left: auto;
+    transform: inherit;
+    background-color: $purp_wt3;
+
+    &::after {
+      display: none;
+    }
+
+    @media (max-width: 1700px) {
+      width: 250px;
+      height: 250px;
+      transform: translateX(-80px);
+    }
+
+    @media (max-width: 992px) {
+      margin: 0 auto;
+      transform: inherit;
+    }
+
+    @media (max-width: 390px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  & .header__tilteblock {
+    margin: 40px auto 25px;
+  }
+
+  & .header__info__text__g {
+    font-size: 23px;
+
+    font-family: 'for', sans-serif;
+    color: $yel;
+
+    & span {
+      font-size: 80px;
+
+      @media (max-width: 1700px) {
+        font-size: 60px;
+      }
+
+      @media (max-width: 390px) {
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width: 1700px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 390px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.header__main__logo__g {
+  margin: 0 auto 80px;
+  max-width: 105px;
+  width: 100%;
+
+  @media (max-width: 1700px) {
+    margin: 0 auto 20px;
+    max-width: 95px;
+  }
+}
+
+.header__main__subtitle__g {
+  font-size: 40px;
+  font-family: 'for', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 10px;
+
+  @media (max-width: 1700px) {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 390px) {
+    font-size: 18px;
+  }
+}
+
+.header__maintitle__g {
+  font-size: 120px;
+  font-family: 'for', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: 1700px) {
+    font-size: 90px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 390px) {
+    font-size: 40px;
   }
 }

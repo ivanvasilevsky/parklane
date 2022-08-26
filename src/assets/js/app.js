@@ -88,37 +88,38 @@ $("[data-fancybox]").fancybox({
 const optionBtns = document.querySelectorAll('.option__btn');
 const optionSlides = document.querySelectorAll('.option__slide');
 
-function optionSlidesHidden() {
-  optionBtns.forEach(item => {
-    item.classList.remove('active');
-  })
+if (optionBtns.length > 0) {
+  function optionSlidesHidden() {
+    optionBtns.forEach(item => {
+      item.classList.remove('active');
+    })
 
-  optionSlides.forEach(item => {
-    item.style.display = 'none';
-  })
-}
+    optionSlides.forEach(item => {
+      item.style.display = 'none';
+    })
+  }
 
-function optionSlidesActive(num) {
+  function optionSlidesActive(num) {
+    optionSlidesHidden();
+    optionBtns[num].classList.add('active');
+    optionSlides[num].style.display = 'block';
+  }
+
+  optionBtns.forEach((item, num) => {
+    item.addEventListener('click', () => {
+      optionSlidesActive(num);
+
+    })
+  });
+
+  function optionSlidesFirst() {
+    optionBtns[0].classList.add('active');
+    optionSlides[0].style.display = 'block';
+  }
+
   optionSlidesHidden();
-  optionBtns[num].classList.add('active');
-  optionSlides[num].style.display = 'block';
+  optionSlidesFirst();
 }
-
-optionBtns.forEach((item, num) => {
-  item.addEventListener('click', () => {
-    optionSlidesActive(num);
-
-  })
-});
-
-function optionSlidesFirst() {
-  optionBtns[0].classList.add('active');
-  optionSlides[0].style.display = 'block';
-}
-
-optionSlidesHidden();
-optionSlidesFirst();
-
 
 //apart modal
 const apartBtns = document.querySelectorAll('.option__item__image');
@@ -155,15 +156,18 @@ const benefBtn = document.querySelector('.benef__btn');
 const benefModal = document.querySelector('.map__modal');
 const benefCross = document.querySelector('.map__modal__cross');
 
-benefBtn.addEventListener('click', () => {
-  benefModal.classList.add('active');
-  body.classList.add('no-scroll');
-})
 
-benefCross.addEventListener('click', () => {
-  benefModal.classList.remove('active');
-  body.classList.remove('no-scroll');
-})
+if (benefBtn) {
+  benefBtn.addEventListener('click', () => {
+    benefModal.classList.add('active');
+    body.classList.add('no-scroll');
+  })
+
+  benefCross.addEventListener('click', () => {
+    benefModal.classList.remove('active');
+    body.classList.remove('no-scroll');
+  })
+}
 
 
 
@@ -449,7 +453,7 @@ footerMap.addEventListener('mouseover', () => {
 const scrollBtn = document.querySelector('.header__down__btn');
 
 scrollBtn.addEventListener('click', () => {
-  document.querySelector('.gallery').scrollIntoView({
+  document.querySelector('.scroll__to').scrollIntoView({
     behavior: 'smooth',
     block: 'start'
   })

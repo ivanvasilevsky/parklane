@@ -348,14 +348,18 @@
 
 
   & .etap__inner {
-    padding: 0px 0 135px;
+    padding: 0 0 135px 110px;
 
     @media (max-width: 1700px) {
-      padding: 0px 100px 40px;
+      padding: 0px 100px 40px 70px;
     }
 
     @media (max-width: 1250px) {
-      padding: 0px 0px 120px;
+      padding: 0px 0px 120px 70px;
+    }
+
+    @media (max-width: 800px) {
+      padding: 0px 0px 120px 0px;
     }
 
     @media (max-width: 570px) {
@@ -366,6 +370,9 @@
   & .etap__slide {
     &::after {
       content: 'Об оъекте';
+      @media (max-width: 570px) {
+        left: -70px;
+      }
     }
   }
 
@@ -397,6 +404,10 @@
     @media (max-width: 720px) {
       margin-left: 20px;
     }
+
+    @media (max-width: 570px) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -414,7 +425,6 @@
   }
 
   @media (max-width: 600px) {
-    font-size: 14px;
     line-height: .9;
   }
 }
