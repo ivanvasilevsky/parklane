@@ -573,6 +573,10 @@ if (paramOut) {
     });
   });
 
+  let asemRooms = 'nothing';
+  let asemEtaj = 'nothing';
+  let asemHome = 'nothing';
+
   paramItem.forEach((item) => {
     item.addEventListener('click', () => {
 
@@ -580,18 +584,79 @@ if (paramOut) {
       item.parentNode.parentNode.querySelector('.param__select').dataset.param = item.dataset.param;
       paramBtnHidden()
 
+
+      let iterat = 0;
+
       if (item.parentNode.parentNode.classList[0] == '1') {
         localStorage.setItem('asem_rooms', `${item.dataset.param}`);
+        asemRooms = item.dataset.param;
       }
 
       if (item.parentNode.parentNode.classList[0] == '2') {
         localStorage.setItem('asem_etaj', `${item.dataset.param}`);
+        asemEtaj = item.dataset.param;
       }
 
       if (item.parentNode.parentNode.classList[0] == '3') {
         localStorage.setItem('asem_house', `${item.dataset.param}`);
+        asemHome = item.dataset.param;
       }
+
+
+      if (asemRooms != 'nothing') {
+        iterat += 1;
+      }
+
+      if (asemEtaj != 'nothing') {
+        iterat += 1;
+      }
+
+      if (asemHome != 'nothing') {
+        iterat += 1;
+      }
+
+      console.log(asemRooms);
+      console.log(asemEtaj);
+      console.log(asemHome);
+      console.log(iterat);
+
+      hiddenApartearch();
+      filterApart(asemRooms, asemEtaj, asemHome, iterat);
     });
   });
 
 }
+const searchApart = document.querySelectorAll('.search__item');
+
+function hiddenApartearch() {
+  searchApart.forEach(item => {
+    item.style.display = 'none';
+  });
+}
+
+function filterApart(room, etaj, home, succesNum) {
+  searchApart.forEach(item => {
+    let succes = 0;
+    let itemRoom = item.querySelector('input[name="room"]').value;
+    let itemEtaj = item.querySelector('input[name="etaj"]').value;
+    let itemHome = item.querySelector('input[name="home"]').value;
+
+    if (itemRoom == room) {
+      succes += 1;
+    }
+
+    if (itemEtaj == etaj) {
+      succes += 1;
+    }
+
+    if (itemHome == home) {
+      succes += 1;
+    }
+
+    if (succes == succesNum) {
+      item.style.display = 'block';
+    }
+
+  })
+}
+

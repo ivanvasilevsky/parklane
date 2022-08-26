@@ -4286,6 +4286,7 @@ a.footer__right__item {
 }
 
 .search__item {
+  display: none;
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
