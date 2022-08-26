@@ -72,6 +72,16 @@ $(document).ready(function () {
     autoWidth: false,
     smartSpeed: 600,
   });
+
+  $(".present__slider").owlCarousel({
+    margin: 20,
+    items: 1,
+    dots: true,
+    nav: false,
+    loop: true,
+    autoWidth: false,
+    smartSpeed: 600,
+  });
 });
 
 
@@ -452,12 +462,14 @@ footerMap.addEventListener('mouseover', () => {
 
 const scrollBtn = document.querySelector('.header__down__btn');
 
-scrollBtn.addEventListener('click', () => {
-  document.querySelector('.scroll__to').scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
+if (scrollBtn) {
+  scrollBtn.addEventListener('click', () => {
+    document.querySelector('.scroll__to').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
   })
-})
+}
 
 
 //form checked
@@ -504,3 +516,82 @@ $(document).on('af_complete', function (event, response) {
     body.classList.remove('no-scroll')
   })
 });
+
+
+
+//insta
+
+//Instafeed
+var isInstagramLoaded = false;
+let inst = document.querySelector('#instafeed');
+if (inst) {
+  $(window).on('scroll', function () {
+    if (!isInstagramLoaded) {
+      const TOKEN = "IGQVJWaHY2czRVRXVGSk10NEdyTHFtMWZArSXFLNGRqTncxYkFyM2d1WmoxaExNUlk1dlJXOGYyUk5QM3F2SG1hd1VzX1A2LV85R3NDT29YMGtCUjUwQ1BKdWc5SlVQNnNlQm5tMmVfcjBVcDB5ZA0pSdQZDZD";
+
+      var feed = new Instafeed({
+        accessToken: TOKEN,
+        limit: 3,
+        template: `<div class="social__photo"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="intagram" title="{{caption}}" class="social__img"></a></div>`
+      });
+      feed.run();
+
+      isInstagramLoaded = true;
+    }
+  });
+}
+
+
+//parametr search
+
+const paramOut = document.querySelectorAll('.param__select__out');
+const paramBtns = document.querySelectorAll('.param__select');
+const paramItem = document.querySelectorAll('.param__item');
+
+
+if (paramOut) {
+  function paramBtnHidden() {
+    paramOut.forEach(item => {
+      item.classList.remove('show');
+    });
+  };
+
+  paramBtns.forEach(item => {
+    item.addEventListener('click', () => {
+      paramBtnHidden();
+      item.parentNode.classList.add('show');
+    })
+  });
+
+  paramOut.forEach(item => {
+    document.addEventListener('click', (e) => {
+      let target = e.target;
+
+      if (!item.parentNode.contains(target)) {
+        item.classList.remove('show');
+      }
+    });
+  });
+
+  paramItem.forEach((item) => {
+    item.addEventListener('click', () => {
+
+      item.parentNode.parentNode.querySelector('.param__select').textContent = item.textContent;
+      item.parentNode.parentNode.querySelector('.param__select').dataset.param = item.dataset.param;
+      paramBtnHidden()
+
+      if (item.parentNode.parentNode.classList[0] == '1') {
+        localStorage.setItem('asem_rooms', `${item.dataset.param}`);
+      }
+
+      if (item.parentNode.parentNode.classList[0] == '2') {
+        localStorage.setItem('asem_etaj', `${item.dataset.param}`);
+      }
+
+      if (item.parentNode.parentNode.classList[0] == '3') {
+        localStorage.setItem('asem_house', `${item.dataset.param}`);
+      }
+    });
+  });
+
+}

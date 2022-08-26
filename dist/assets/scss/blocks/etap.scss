@@ -428,3 +428,26 @@
     line-height: .9;
   }
 }
+
+
+.page.general {
+  & .etap {
+    padding: 50px 0 0px;
+
+    @media (max-width: 1700px) {
+      padding: 20px 100px 0px;
+    }
+
+    @media (max-width: 1250px) {
+      padding: 20px 0px 0px;
+    }
+
+    @media (max-width: 570px) {
+      padding: 20px 0 0px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

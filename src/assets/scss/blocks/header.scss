@@ -816,3 +816,42 @@
     font-size: 40px;
   }
 }
+
+
+.page.search_page {
+  & .header {
+    height: 600px;
+    overflow: initial;
+
+    &::after {
+      background-color: $white;
+    }
+
+    @media (max-width: 1700px) {
+      height: 480px;
+      min-height: 300px;
+    }
+
+    @media (max-width: 600px) {
+      height: 420px;
+    }
+
+    @media (max-width: 360px) {
+      height: 380px;
+    }
+  }
+
+  & .header__maintitle {
+    font-size: 60px;
+
+    @media (max-width: 1700px) {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 25px;
+      margin-top: 30px;
+    }
+  }
+}

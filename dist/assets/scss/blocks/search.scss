@@ -1,0 +1,37 @@
+.search__inner {
+  padding: 75px 0 120px;
+
+  @media (max-width: 1700px) {
+    padding: 60px 0 50px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 30px 0 35px;
+  }
+}
+
+.search__block {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 65px;
+
+  @media (max-width: 1250px) {
+    grid-gap: 25px
+  }
+}
+
+.search__item {
+  grid-column: span 2;
+
+  @media (max-width: 1250px) {
+    grid-column: span 3;
+  }
+
+  @media (max-width: 550px) {
+    grid-column: span 4;
+  }
+
+  @media (max-width: 360px) {
+    grid-column: span 6;
+  }
+}
