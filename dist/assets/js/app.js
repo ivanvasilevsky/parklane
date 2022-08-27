@@ -726,6 +726,7 @@ function hiddenApartearch() {
 
 //filter option
 function filterApart(room, etaj, home, succesNum) {
+  let mainSuc = 0;
   searchApart.forEach(item => {
     let succes = 0;
     let itemRoom = item.querySelector('input[name="room"]').value;
@@ -746,8 +747,14 @@ function filterApart(room, etaj, home, succesNum) {
 
     if (succes == succesNum) {
       item.style.display = 'block';
+      mainSuc += 1;
     }
-
   })
+
+  if (mainSuc == 0) {
+    document.querySelector('.search__nothig').style.display = 'block';
+  } else {
+    document.querySelector('.search__nothig').style.display = 'none';
+  }
 }
 

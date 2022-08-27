@@ -2103,6 +2103,8 @@ input[type=radio]:checked::after {
   background-color: #231f33;
   overflow: hidden;
   color: #ffffff;
+  position: relative;
+  z-index: 100;
 }
 
 .footer__inner {
@@ -4215,7 +4217,7 @@ a.footer__right__item {
 
 .param__menu {
   position: absolute;
-  z-index: 500;
+  z-index: 1000;
   top: 100%;
   left: 0;
   width: 100%;
@@ -4289,6 +4291,13 @@ a.footer__right__item {
   display: none;
   -ms-grid-column-span: 2;
   grid-column: span 2;
+}
+
+.search__nothig {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  display: none;
 }
 
 @media (max-width: 1700px) {
@@ -5018,6 +5027,10 @@ a.footer__right__item {
 
   .search__inner {
     padding: 60px 0 50px;
+  }
+
+  .search__nothig {
+    font-size: 25px;
   }
 }
 
@@ -6016,6 +6029,10 @@ a.footer__right__item {
   .param__inner {
     padding: 100px 0 130px;
   }
+
+  .search__nothig {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -6714,6 +6731,10 @@ a.footer__right__item {
 
   .news__item__mouns {
     font-size: 8px;
+  }
+
+  .search__nothig {
+    font-size: 17px;
   }
 }
 

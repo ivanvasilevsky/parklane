@@ -3,6 +3,8 @@
 	background-color: $purp;
 	overflow: hidden;
 	color: $white;
+	position: relative;
+	z-index: 100;
 }
 
 .footer__inner {
