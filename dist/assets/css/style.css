@@ -4298,6 +4298,7 @@ a.footer__right__item {
   text-align: center;
   width: 100%;
   display: none;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 1700px) {
@@ -4462,7 +4463,7 @@ a.footer__right__item {
   }
 
   .page.search_page .header {
-    height: 480px;
+    height: 440px;
     min-height: 300px;
   }
 
@@ -5026,7 +5027,7 @@ a.footer__right__item {
   }
 
   .search__inner {
-    padding: 60px 0 50px;
+    padding: 60px 0 120px;
   }
 
   .search__nothig {
@@ -6357,7 +6358,7 @@ a.footer__right__item {
   }
 
   .search__inner {
-    padding: 30px 0 35px;
+    padding: 30px 0 70px;
   }
 
   .search__item {
