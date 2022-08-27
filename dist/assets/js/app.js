@@ -577,56 +577,136 @@ if (paramOut) {
   let asemEtaj = 'nothing';
   let asemHome = 'nothing';
 
+  function localSetItem() {
+    paramOut.forEach(item => {
+      if (item.classList[0] == '1') {
+        if (localStorage.getItem('asem_rooms') != 'nothing') {
+          item.childNodes[1].textContent = localStorage.getItem('asem_rooms');
+          item.childNodes[1].dataset.param = localStorage.getItem('asem_rooms');
+          asemRooms = localStorage.getItem('asem_rooms');
+        }
+      }
+
+      if (item.classList[0] == '2') {
+        if (localStorage.getItem('asem_etaj') != 'nothing') {
+          item.childNodes[1].textContent = localStorage.getItem('asem_etaj');
+          item.childNodes[1].dataset.param = localStorage.getItem('asem_etaj');
+          asemEtaj = localStorage.getItem('asem_etaj');
+        }
+      }
+
+      if (item.classList[0] == '3') {
+        if (localStorage.getItem('asem_house') != 'nothing') {
+          item.childNodes[1].textContent = localStorage.getItem('asem_house');
+          item.childNodes[1].dataset.param = localStorage.getItem('asem_house');
+          asemHome = localStorage.getItem('asem_house');
+        }
+      }
+    })
+  }
+
+
   paramItem.forEach((item) => {
     item.addEventListener('click', () => {
 
       item.parentNode.parentNode.querySelector('.param__select').textContent = item.textContent;
       item.parentNode.parentNode.querySelector('.param__select').dataset.param = item.dataset.param;
-      paramBtnHidden()
-
-
-      let iterat = 0;
+      paramBtnHidden();
 
       if (item.parentNode.parentNode.classList[0] == '1') {
         localStorage.setItem('asem_rooms', `${item.dataset.param}`);
-        asemRooms = item.dataset.param;
+
       }
 
       if (item.parentNode.parentNode.classList[0] == '2') {
         localStorage.setItem('asem_etaj', `${item.dataset.param}`);
-        asemEtaj = item.dataset.param;
       }
 
       if (item.parentNode.parentNode.classList[0] == '3') {
         localStorage.setItem('asem_house', `${item.dataset.param}`);
-        asemHome = item.dataset.param;
       }
 
+      clickActiveFilter()
 
-      if (asemRooms != 'nothing') {
-        iterat += 1;
-      }
-
-      if (asemEtaj != 'nothing') {
-        iterat += 1;
-      }
-
-      if (asemHome != 'nothing') {
-        iterat += 1;
-      }
-
-      console.log(asemRooms);
-      console.log(asemEtaj);
-      console.log(asemHome);
-      console.log(iterat);
-
-      hiddenApartearch();
-      filterApart(asemRooms, asemEtaj, asemHome, iterat);
     });
   });
 
 }
+
+
+//click Active Filter
+function clickActiveFilter() {
+  let asemRooms = 'nothing';
+  let asemEtaj = 'nothing';
+  let asemHome = 'nothing';
+  let iterat = 0;
+
+
+  paramItem.forEach((item) => {
+    if (item.parentNode.parentNode.classList[0] == '1') {
+      asemRooms = item.parentNode.parentNode.querySelector('.param__select').dataset.param;
+    }
+
+    if (item.parentNode.parentNode.classList[0] == '2') {
+      asemEtaj = item.parentNode.parentNode.querySelector('.param__select').dataset.param;
+    }
+
+    if (item.parentNode.parentNode.classList[0] == '3') {
+      asemHome = item.parentNode.parentNode.querySelector('.param__select').dataset.param;
+    }
+  })
+
+  if (asemRooms != 'nothing') {
+    iterat += 1;
+  }
+
+  if (asemEtaj != 'nothing') {
+    iterat += 1;
+  }
+
+  if (asemHome != 'nothing') {
+    iterat += 1;
+  }
+  hiddenApartearch();
+  filterApart(asemRooms, asemEtaj, asemHome, iterat);
+}
+
+//set filter item
+
+const searchPage = document.querySelector('.search');
 const searchApart = document.querySelectorAll('.search__item');
+
+
+function localFilterGet() {
+  const localRooms = localStorage.getItem('asem_rooms');
+  const localEtaj = localStorage.getItem('asem_etaj');
+  const localHome = localStorage.getItem('asem_house');
+
+  let localIterat = 0;
+
+  if (localRooms != 'nothing') {
+    localIterat += 1;
+  }
+
+  if (localEtaj != 'nothing') {
+    localIterat += 1;
+  }
+
+  if (localHome != 'nothing') {
+    localIterat += 1;
+  }
+
+  hiddenApartearch();
+  filterApart(localRooms, localEtaj, localHome, localIterat);
+}
+
+
+
+
+if (searchPage) {
+  localFilterGet();
+  localSetItem();
+}
 
 function hiddenApartearch() {
   searchApart.forEach(item => {
@@ -634,6 +714,8 @@ function hiddenApartearch() {
   });
 }
 
+
+//filter option
 function filterApart(room, etaj, home, succesNum) {
   searchApart.forEach(item => {
     let succes = 0;
