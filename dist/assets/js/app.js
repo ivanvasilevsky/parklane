@@ -573,9 +573,6 @@ if (paramOut) {
     });
   });
 
-  let asemRooms = 'nothing';
-  let asemEtaj = 'nothing';
-  let asemHome = 'nothing';
 
   function localSetItem() {
     paramOut.forEach(item => {
@@ -615,7 +612,6 @@ if (paramOut) {
 
       if (item.parentNode.parentNode.classList[0] == '1') {
         localStorage.setItem('asem_rooms', `${item.dataset.param}`);
-
       }
 
       if (item.parentNode.parentNode.classList[0] == '2') {
@@ -701,9 +697,22 @@ function localFilterGet() {
 }
 
 
+function localSetStorage() {
+  if (localStorage.getItem('asem_rooms') == null) {
+    localStorage.setItem('asem_rooms', `nothing`);
+  }
 
+  if (localStorage.getItem('asem_etaj') == null) {
+    localStorage.setItem('asem_etaj', `nothing`);
+  }
+
+  if (localStorage.getItem('asem_house') == null) {
+    localStorage.setItem('asem_house', `nothing`);
+  }
+}
 
 if (searchPage) {
+  localSetStorage();
   localFilterGet();
   localSetItem();
 }
