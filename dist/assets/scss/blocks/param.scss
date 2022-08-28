@@ -21,7 +21,7 @@
     }
 
     @media (max-width: 770px) {
-      height: 60px;
+      height: 30px;
     }
   }
 
@@ -40,7 +40,7 @@
     }
 
     @media (max-width: 770px) {
-      height: 60px;
+      height: 30px;
     }
   }
 }
@@ -75,6 +75,19 @@
   max-width: 320px;
   position: relative;
   width: 100%;
+
+  &::after {
+    content: '';
+    width: 13px;
+    height: 7px;
+    position: absolute;
+    right: 30px;
+    top: 43%;
+    background: url(../img/icons/arrow.svg) no-repeat center / cover;
+    transform: scaleY(1);
+    transform-origin: center center;
+    transition: .2s;
+  }
 
 
   @media (max-width: 1250px) {
@@ -154,6 +167,11 @@
 }
 
 .param__select__out.show {
+  &::after {
+    transform: scaleY(-1);
+    transition: .2s;
+  }
+
   & .param__select {
     background-color: $purp_wt;
     transition: .4s;

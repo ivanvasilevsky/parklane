@@ -20,7 +20,7 @@
     }
 
     @media (max-width: 770px) {
-      height: 60px;
+      height: 30px;
     }
   }
 
@@ -39,7 +39,7 @@
     }
 
     @media (max-width: 770px) {
-      height: 60px;
+      height: 30px;
     }
   }
 
@@ -282,6 +282,19 @@
 }
 
 .page.general {
+  & .form {
+
+    &::before {
+      background-color: $white;
+    }
+
+    &::after {
+      background-color: $white;
+    }
+  }
+}
+
+.page.main {
   & .form {
 
     &::before {

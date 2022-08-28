@@ -23,6 +23,8 @@
 .search__item {
   display: none;
   grid-column: span 2;
+  justify-content: space-between;
+  flex-direction: column;
 
   @media (max-width: 1250px) {
     grid-column: span 3;

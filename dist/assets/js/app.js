@@ -25,13 +25,13 @@ $(document).ready(function () {
   $("#phone3").inputmask("+7 (999) 999-99-99");
 
 
-//slider
+  //slider
   $(".gallery__slider__inner").owlCarousel({
-		items: 1,
+    items: 1,
     margin: 45,
     dots: false,
     nav: true,
-		loop: true,
+    loop: true,
     autoWidth: true,
     smartSpeed: 600,
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
         margin: 45,
       },
     }
-	});
+  });
 
   $(".etap__slider").owlCarousel({
     items: 1,
@@ -156,7 +156,7 @@ apartModalCross.addEventListener('click', () => {
   apartModal.classList.remove('active');
   setTimeout(() => {
     apartModal.classList.remove('active--form');
-  }, 300);
+  }, 400);
   body.classList.remove('no-scroll');
 });
 
@@ -495,6 +495,11 @@ modalAll.forEach(item => {
     let target = e.target;
     if (!item.childNodes[1].contains(target)) {
       item.classList.remove('active')
+
+      setTimeout(() => {
+        item.classList.remove('active--form')
+      }, 400);
+
       body.classList.remove('no-scroll')
       mobileModalBtsHidden()
       mobileModalItemHidden()
@@ -511,10 +516,16 @@ $(document).on('af_complete', function (event, response) {
     linkDownload.click();
   }
 
-  modalAll.forEach(item => {
-    item.classList.remove('active')
-    body.classList.remove('no-scroll')
-  })
+  if (response.success == true) {
+    modalAll.forEach(item => {
+      item.classList.remove('active')
+      body.classList.remove('no-scroll')
+      setTimeout(() => {
+        item.classList.remove('active--form')
+      }, 400);
+    })
+  }
+
 });
 
 
@@ -711,7 +722,7 @@ function localSetStorage() {
   }
 }
 
-if (searchPage) {
+if (paramOut) {
   localSetStorage();
   localFilterGet();
   localSetItem();
@@ -746,15 +757,18 @@ function filterApart(room, etaj, home, succesNum) {
     }
 
     if (succes == succesNum) {
-      item.style.display = 'block';
+      item.style.display = 'flex';
       mainSuc += 1;
     }
   })
 
   if (mainSuc == 0) {
-    document.querySelector('.search__nothig').style.display = 'block';
+    if (searchPage) {
+      document.querySelector('.search__nothig').style.display = 'block';
+    }
   } else {
-    document.querySelector('.search__nothig').style.display = 'none';
+    if (searchPage) {
+      document.querySelector('.search__nothig').style.display = 'none';
+    }
   }
 }
-

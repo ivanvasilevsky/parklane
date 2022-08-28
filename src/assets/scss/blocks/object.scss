@@ -283,3 +283,9 @@
     margin-top: -50px;
   }
 }
+
+.page.general {
+  & .object__inner {
+    padding-top: 80px;
+  }
+}
