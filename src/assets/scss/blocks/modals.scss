@@ -228,6 +228,11 @@
     max-height: 240px;
   }
 
+  @media (max-height: 670px) {
+    margin: 10px auto 20px;
+    max-height: 200px;
+  }
+
   @media (max-width: 350px) {
     max-height: 200px;
     margin: 5px auto 15px;

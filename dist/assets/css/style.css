@@ -193,7 +193,6 @@ input.error::placeholder {
   border: none;
   border-radius: 50px;
   height: 65px;
-  padding-top: 8px;
   font-family: "enceReg", sans-serif;
   -webkit-transition: 0.15s;
   -o-transition: 0.15s;
@@ -222,7 +221,6 @@ input.error::placeholder {
 
 .benef__btn {
   padding: 5px 40px;
-  padding-top: 9px;
   margin: 0 auto;
   display: block;
   height: 80px;
@@ -230,7 +228,6 @@ input.error::placeholder {
 
 .form__btn {
   padding: 5px 40px;
-  padding-top: 11px;
   margin-right: auto;
   display: block;
   height: 70px;
@@ -254,7 +251,6 @@ input.error::placeholder {
   margin: 0 auto;
   letter-spacing: 0.7px;
   padding: 5px 30px;
-  padding-top: 10px;
 }
 
 .geo__btn {
@@ -448,7 +444,7 @@ input[type=radio]:checked::after {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  min-height: 560px;
+  min-height: 820px;
   max-height: 1080px;
 }
 
@@ -493,6 +489,10 @@ input[type=radio]:checked::after {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 100;
+}
+
+.page.main .header {
+  min-height: 880px;
 }
 
 .page.main .header::before {
@@ -625,8 +625,9 @@ input[type=radio]:checked::after {
 .header__burger__title {
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: -8px;
   margin-left: 15px;
+  display: block;
+  height: 13px;
 }
 
 .header__burger__inner {
@@ -4548,14 +4549,12 @@ a.footer__right__item {
   .benef__btn {
     height: 55px;
     padding: 5px 30px;
-    padding-top: 10px;
     font-size: 18px;
   }
 
   .form__btn {
     height: 55px;
     padding: 5px 30px;
-    padding-top: 10px;
     font-size: 18px;
   }
 
@@ -4576,12 +4575,17 @@ a.footer__right__item {
   .header {
     padding-bottom: 45px;
     background-position-y: inherit;
+    min-height: 655px;
   }
 
   .header__down {
     width: 140px;
     height: 140px;
     bottom: -45px;
+  }
+
+  .page.main .header {
+    min-height: 660px;
   }
 
   .page.main .header__info {
@@ -6520,7 +6524,7 @@ a.footer__right__item {
 @media (max-width: 630px) {
   .header {
     height: inherit;
-    min-height: inherit;
+    min-height: initial;
     max-height: inherit;
     padding-bottom: 70px;
   }
@@ -6818,7 +6822,7 @@ a.footer__right__item {
 
 @media (max-width: 500px) {
   .header__top {
-    padding: 20px 0;
+    padding: 20px 0 !important;
   }
 
   .benef__m__block {
@@ -7175,5 +7179,30 @@ a.footer__right__item {
     font-size: 13px;
     padding: 8px 13px 4px;
     margin-bottom: 7px;
+  }
+}
+
+@media (max-height: 990px) {
+  .page.main .header__tilteblock {
+    margin: 10px auto 20px;
+  }
+
+  .header__top {
+    padding: 30px 0 !important;
+  }
+
+  .header__tilteblock {
+    margin: 30px auto;
+  }
+
+  .page.general .header__tilteblock {
+    margin: 10px auto 20px;
+  }
+}
+
+@media (max-height: 670px) {
+  .apart__modal__image {
+    margin: 10px auto 20px;
+    max-height: 200px;
   }
 }
