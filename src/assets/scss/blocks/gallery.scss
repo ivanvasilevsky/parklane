@@ -155,22 +155,26 @@
 
 .gallery__slider__img {
   max-height: 420px;
-
+  max-width: initial;
 
   @media (max-width: 1700px) {
     max-height: 300px;
+    min-height: 300px;
   }
 
   @media (max-width: 770px) {
     height: 250px;
+    min-height: 250px;
   }
 
   @media (max-width: 550px) {
     height: 150px;
+    min-height: 150px;
   }
 
   @media (max-width: 370px) {
     height: 110px;
+    min-height: 110px;
   }
 }
 

@@ -508,7 +508,7 @@ input[type=radio]:checked::after {
 }
 
 .page.main .header__info {
-  margin-top: -10px;
+  margin-top: 30px;
 }
 
 .page.main .header__info__inner {
@@ -727,6 +727,7 @@ input[type=radio]:checked::after {
   margin-right: 15px;
   width: 100%;
   max-width: 27px;
+  max-height: 27px;
   opacity: 1;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -747,6 +748,7 @@ input[type=radio]:checked::after {
 .header__soc__img {
   width: 100%;
   height: 100%;
+  max-height: 26px;
 }
 
 .header__num__link {
@@ -754,6 +756,7 @@ input[type=radio]:checked::after {
   font-size: 20px;
   margin-bottom: -5px;
   letter-spacing: 2px;
+  font-family: "for", sans-serif;
 }
 
 .header__tilteblock {
@@ -765,7 +768,7 @@ input[type=radio]:checked::after {
 
 .header__maintitle {
   font-weight: 100;
-  font-size: 120px;
+  font-size: 90px;
   text-transform: uppercase;
   font-family: "for", sans-serif;
   margin-bottom: -28px;
@@ -792,6 +795,7 @@ input[type=radio]:checked::after {
 }
 
 .header__info {
+  font-family: "for", sans-serif;
   -webkit-transform: translateX(-90px);
       -ms-transform: translateX(-90px);
           transform: translateX(-90px);
@@ -871,6 +875,7 @@ input[type=radio]:checked::after {
 }
 
 .header__form {
+  font-family: "for", sans-serif;
   max-width: 325px;
 }
 
@@ -889,6 +894,7 @@ input[type=radio]:checked::after {
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
+  font-family: "for", sans-serif;
 }
 
 .header__form__input {
@@ -937,6 +943,7 @@ input[type=radio]:checked::after {
   text-align: center;
   max-width: 900px;
   margin-top: 50px;
+  font-family: "for", sans-serif;
 }
 
 .header__info__m__img {
@@ -1009,6 +1016,7 @@ input[type=radio]:checked::after {
 
 .page.search_page .header {
   height: 600px;
+  min-height: 600px;
   overflow: initial;
 }
 
@@ -1114,6 +1122,7 @@ input[type=radio]:checked::after {
 
 .gallery__slider__img {
   max-height: 420px;
+  max-width: initial;
 }
 
 .option {
@@ -1304,6 +1313,16 @@ input[type=radio]:checked::after {
   max-width: 240px;
   width: 100%;
   margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .option__item__title {
@@ -1312,6 +1331,10 @@ input[type=radio]:checked::after {
   text-transform: uppercase;
   font-family: "enceBold", sans-serif;
   margin-bottom: 35px;
+}
+
+.option__item__title span {
+  color: #cbb45e;
 }
 
 .option__item__image {
@@ -1438,13 +1461,14 @@ input[type=radio]:checked::after {
 }
 
 .etap__slide::after {
-  content: "ParkLane";
+  content: "Golden Residence";
   font-size: 100px;
   font-family: "carolina", sans-serif;
   color: #cbb45e;
   position: absolute;
-  top: 13%;
-  right: -72%;
+  top: 10%;
+  left: 97%;
+  width: 380px;
 }
 
 .etap__slider {
@@ -1453,13 +1477,21 @@ input[type=radio]:checked::after {
 
 .etap__slider .owl-prev {
   position: absolute;
-  right: 28px;
+  right: 48px;
   background: none;
   border: none;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 60px;
   width: 18px;
+  max-width: 18px;
   color: #b9a24e;
+  padding: 0;
+  bottom: -60px;
+}
+
+.etap__slider .owl-prev:active {
+  background-color: none;
+  background: none;
 }
 
 .etap__slider .owl-next {
@@ -1468,9 +1500,17 @@ input[type=radio]:checked::after {
   background: none;
   border: none;
   width: 18px;
+  max-width: 18px;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 60px;
   color: #b9a24e;
+  padding: 0;
+  bottom: -60px;
+}
+
+.etap__slider .owl-next:active {
+  background-color: none;
+  background: none;
 }
 
 .etap__slide__item {
@@ -1593,6 +1633,7 @@ input[type=radio]:checked::after {
 .etap__right__info__m {
   font-size: 25px;
   color: #696c82;
+  font-family: "for", sans-serif;
 }
 
 .page.general .etap {
@@ -2150,14 +2191,21 @@ input[type=radio]:checked::after {
           flex-direction: column;
   width: 50%;
   text-align: center;
+  font-family: "for", sans-serif;
 }
 
 .footer__logo {
   margin: 0 auto;
+  width: 100%;
+  max-width: 140px;
 }
 
 .footer__right {
   width: 25%;
+}
+
+.footer__right p {
+  font-family: "for", sans-serif;
 }
 
 .footer__right__inner {
@@ -2200,6 +2248,39 @@ a.footer__right__item {
 .footer__bottom {
   background: url(../img/bg/map_bg.jpg) no-repeat center/cover;
   height: 250px;
+}
+
+.footer__social {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social__link {
+  display: block;
+  max-width: 23px;
+  margin-right: 20px;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__social__link:last-child {
+  margin-right: 0;
+}
+
+.footer__social__link:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__social__img {
+  width: 100%;
+  max-height: 24px;
 }
 
 .apart__modal {
@@ -3547,6 +3628,7 @@ a.footer__right__item {
 
 .object__slider {
   overflow: hidden;
+  position: relative;
 }
 
 .object__slider .owl-prev {
@@ -3554,7 +3636,38 @@ a.footer__right__item {
 }
 
 .object__slider .owl-next {
-  display: none;
+  position: relative;
+  border: solid 2px #cbb45e;
+  border-radius: 50%;
+  background: none;
+  color: #cbb45e;
+  width: 190px;
+  height: 190px;
+  font-size: 35px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: 800;
+  font-weight: 100;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.object__slider .owl-next:hover {
+  background-color: #cbb45e;
+  opacity: 0.7;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.object__slider .owl-next:active {
+  opacity: 0.9;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .object__slider .owl-dots {
@@ -3594,6 +3707,17 @@ a.footer__right__item {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  padding-bottom: 170px;
+  position: relative;
+}
+
+.object__slide__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 400;
 }
 
 .object__left {
@@ -3633,6 +3757,9 @@ a.footer__right__item {
 
 .object__info__item {
   font-size: 20px;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0px;
 }
 
 .object__title {
@@ -4619,7 +4746,7 @@ a.footer__right__item {
   }
 
   .header__maintitle {
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: -24px;
   }
 
@@ -4754,6 +4881,7 @@ a.footer__right__item {
 
   .gallery__slider__img {
     max-height: 300px;
+    min-height: 300px;
   }
 
   .option::before {
@@ -4958,7 +5086,7 @@ a.footer__right__item {
   }
 
   .footer__logo {
-    max-width: 70px;
+    max-width: 100px;
   }
 
   .footer__right__item {
@@ -5089,6 +5217,11 @@ a.footer__right__item {
     padding-left: 70px;
   }
 
+  .object__slider .owl-next {
+    width: 120px;
+    height: 120px;
+  }
+
   .object__image__link {
     max-width: 400px;
   }
@@ -5103,7 +5236,7 @@ a.footer__right__item {
   }
 
   .object__info__item {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .object__title {
@@ -5811,7 +5944,7 @@ a.footer__right__item {
   }
 
   .object__info__item {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .object__subtitle {
@@ -6068,7 +6201,7 @@ a.footer__right__item {
   }
 
   .header__maintitle {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: -18px;
   }
 
@@ -6136,6 +6269,7 @@ a.footer__right__item {
 
   .gallery__slider__img {
     height: 250px;
+    min-height: 250px;
   }
 
   .option::before {
@@ -6346,6 +6480,12 @@ a.footer__right__item {
     padding-bottom: 20px;
   }
 
+  .object__slider .owl-next {
+    width: 80px;
+    height: 80px;
+    padding-bottom: 10px;
+  }
+
   .object__slider .owl-dot {
     width: 10px;
     height: 10px;
@@ -6467,10 +6607,15 @@ a.footer__right__item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 60px;
   }
 
   .object__left {
     margin: 0 auto;
+  }
+
+  .object__image__link {
+    max-width: initial;
   }
 
   .object__left__bottom {
@@ -6538,7 +6683,7 @@ a.footer__right__item {
   }
 
   .header__maintitle {
-    font-size: 45px;
+    font-size: 30px;
   }
 
   .header__main {
@@ -6678,16 +6823,24 @@ a.footer__right__item {
 
   .etap__slide::after {
     right: inherit;
-    left: -48%;
-    top: 5%;
+    left: -80%;
+    top: 41%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .etap__slider .owl-prev {
-    bottom: -30px;
+    bottom: -40px;
+    font-size: 50px;
   }
 
   .etap__slider .owl-next {
-    bottom: -30px;
+    bottom: -40px;
+    font-size: 50px;
   }
 
   .etap__right {
@@ -6711,7 +6864,11 @@ a.footer__right__item {
   }
 
   .page.main .etap__slide::after {
-    left: -70px;
+    left: -130px;
+    top: 40%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
 
   .page.main .etap__right {
@@ -6734,6 +6891,7 @@ a.footer__right__item {
 
   .gallery__slider__img {
     height: 150px;
+    min-height: 150px;
   }
 
   .option__inner {
@@ -6902,6 +7060,13 @@ a.footer__right__item {
     text-align: center;
   }
 
+  .footer__social {
+    margin: 20px auto 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
   .mobile__modal__house__image {
     max-width: 140px;
   }
@@ -7022,6 +7187,7 @@ a.footer__right__item {
 
   .gallery__slider__img {
     height: 110px;
+    min-height: 110px;
   }
 }
 
@@ -7029,6 +7195,10 @@ a.footer__right__item {
   .page.main .header__info {
     width: 220px;
     height: 220px;
+  }
+
+  .header__maintitle {
+    font-size: 25px;
   }
 
   .page.search_page .header {
@@ -7045,7 +7215,7 @@ a.footer__right__item {
   }
 
   .etap__slide::after {
-    left: -35%;
+    font-size: 45px;
   }
 
   .etap__slide {
@@ -7126,6 +7296,10 @@ a.footer__right__item {
     margin: 5px 0 10px;
   }
 
+  .object__info__item {
+    font-size: 11px;
+  }
+
   .pride__left__item {
     font-size: 16px;
   }
@@ -7158,6 +7332,10 @@ a.footer__right__item {
 @media (max-width: 340px) {
   .apart__modal__btn {
     font-size: 14px;
+  }
+
+  .header__soc__link {
+    margin-right: 5px;
   }
 
   .mobile__modal__house__image {

@@ -65,9 +65,10 @@ $(document).ready(function () {
   });
 
   $(".object__slider").owlCarousel({
+    margin: 20,
     items: 1,
     dots: true,
-    nav: false,
+    nav: true,
     loop: true,
     autoWidth: false,
     smartSpeed: 600,
@@ -220,22 +221,23 @@ const planEtajModalCross = document.querySelector('.plan__modal__cross');
 const planModalItem = document.querySelectorAll('.plan__modal__item');
 const planModalSubtitle = document.querySelector('.plan__modal__subtitle');
 
-planEtajModalCross.addEventListener('click', () => {
-  planEtajModal.classList.remove('active');
-  body.classList.remove('no-scroll');
-})
-
-planSections.forEach(item => {
-  item.addEventListener('click', () => {
-    planModalSubtitle.innerHTML = `${item.querySelector('input[name="info"]').value}`;
-    planEtajModal.classList.add('active');
-    body.classList.add('no-scroll');
-    planModalItemActive(item.classList[1])
-
-
+if (planEtajModal) {
+  planEtajModalCross.addEventListener('click', () => {
+    planEtajModal.classList.remove('active');
+    body.classList.remove('no-scroll');
   })
-});
 
+  planSections.forEach(item => {
+    item.addEventListener('click', () => {
+      planModalSubtitle.innerHTML = `${item.querySelector('input[name="info"]').value}`;
+      planEtajModal.classList.add('active');
+      body.classList.add('no-scroll');
+      planModalItemActive(item.classList[1])
+
+
+    })
+  });
+}
 function planModalItemActive(name) {
 
   planModalItem.forEach(item => {
@@ -451,11 +453,21 @@ function mobileEtajBtnsActive() {
 const footerMap = document.querySelector('.footer__bottom');
 let footerMapI = 1;
 
+
 footerMap.addEventListener('mouseover', () => {
+  let footerBody = document.querySelector('.map__body').value;
+
+  if (footerBody.length < 2) {
+    footerBody = '<iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd6c237ac4b6b079751760a7ae5910a1290ed4c1fc3ea3e9ba5ac6f4f7527882&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>'
+  } else {
+    footerBody = document.querySelector('.map__body').value;
+  }
+
   if (footerMapI == 1) {
-    footerMap.innerHTML = '<iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd6c237ac4b6b079751760a7ae5910a1290ed4c1fc3ea3e9ba5ac6f4f7527882&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>';
+    footerMap.innerHTML = footerBody;
     footerMapI = 2;
   }
+
 })
 
 //start scroll
@@ -771,4 +783,34 @@ function filterApart(room, etaj, home, succesNum) {
       document.querySelector('.search__nothig').style.display = 'none';
     }
   }
+}
+
+
+
+//sales
+
+const roomsItem = document.querySelectorAll('.room');
+const salesInput = document.querySelector('.input__sales');
+
+if (salesInput) {
+
+  let salesInfo = salesInput.value.split('r');
+
+  let salesMass = [];
+
+  salesInfo.forEach(item => {
+    salesMass.push(`r${item}`);
+  });
+
+  for (let i = 1; i < salesMass.length; i++) {
+    roomsCycle(salesMass[i])
+  }
+}
+
+function roomsCycle(salesName) {
+  roomsItem.forEach((item) => {
+    if (item.classList[1] == salesName) {
+      item.classList.add('sales');
+    }
+  })
 }

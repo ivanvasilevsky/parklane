@@ -97,13 +97,14 @@
   position: relative;
 
   &::after {
-    content: 'ParkLane';
+    content: 'Golden Residence';
     font-size: 100px;
     font-family: 'carolina', sans-serif;
     color: $yel;
     position: absolute;
-    top: 13%;
-    right: -72%;
+    top: 10%;
+    left: 97%;
+    width: 380px;
 
     @media (max-width: 1700px) {
       font-size: 70px;
@@ -117,12 +118,14 @@
 
     @media (max-width: 570px) {
       right: inherit;
-      left: -48%;
-      top: 5%;
+      left: -80%;
+      top: 41%;
+      transform: rotate(-90deg);
+      width: max-content;
     }
 
     @media (max-width: 360px) {
-      left: -35%;
+      font-size: 45px;
     }
   }
 
@@ -147,16 +150,25 @@
 
   .owl-prev {
     position: absolute;
-    right: 28px;
+    right: 48px;
     background: none;
     border: none;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 60px;
     width: 18px;
+    max-width: 18px;
     color: $yel_dk;
+    padding: 0;
+    bottom: -60px;
+
+    &:active {
+      background-color: none;
+      background: none;
+    }
 
     @media (max-width: 570px) {
-      bottom: -30px;
+      bottom: -40px;
+      font-size: 50px;
     }
   }
 
@@ -166,12 +178,21 @@
     background: none;
     border: none;
     width: 18px;
+    max-width: 18px;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 60px;
     color: $yel_dk;
+    padding: 0;
+    bottom: -60px;
+
+    &:active {
+      background-color: none;
+      background: none;
+    }
 
     @media (max-width: 570px) {
-      bottom: -30px;
+      bottom: -40px;
+      font-size: 50px;
     }
   }
 }
@@ -371,7 +392,9 @@
     &::after {
       content: 'Об оъекте';
       @media (max-width: 570px) {
-        left: -70px;
+        left: -130px;
+        top: 40%;
+        transform: rotate(-90deg);
       }
     }
   }
@@ -414,6 +437,7 @@
 .etap__right__info__m {
   font-size: 25px;
   color: $purp_wt2;
+  font-family: 'for', sans-serif;
 
   @media (max-width: 1700px) {
     font-size: 20px;
