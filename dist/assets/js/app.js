@@ -90,7 +90,10 @@ $(document).ready(function () {
 $("[data-fancybox]").fancybox({
   buttons: [
     'close'
-  ]
+  ],
+  backFocus: false,
+  hash: false,
+  afterClose: function () {}
 });
 
 

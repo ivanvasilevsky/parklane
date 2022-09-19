@@ -1080,22 +1080,22 @@
 
   &.a14 {
     & .room {
-        top: 31px;
-        height: 378px;
-        left: 10px;
-      }
+      top: 31px;
+      height: 378px;
+      left: 10px;
+    }
 
-      & .room1_a14 {
-        width: 689px;
-        clip-path: polygon(31.5% 0, 59% 0%, 59% 55%, 100% 55%, 100% 100%, 0% 100%);
-      }
+    & .room1_a14 {
+      width: 689px;
+      clip-path: polygon(31.5% 0, 59% 0%, 59% 55%, 100% 55%, 100% 100%, 0% 100%);
+    }
 
-      & .room2_a14 {
-        left: inherit;
-        right: 7px;
-        width: 329px;
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 55%, 21% 55%, 21% 32%, 18% 32%, 18% 28%, 14% 28%, 14% 13%, 25% 13%);
-      }
+    & .room2_a14 {
+      left: inherit;
+      right: 7px;
+      width: 329px;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 55%, 21% 55%, 21% 32%, 18% 32%, 18% 28%, 14% 28%, 14% 13%, 25% 13%);
+    }
   }
 
   &.a9_13 {

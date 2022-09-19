@@ -130,14 +130,15 @@ a.footer__right__item {
 
 .footer__bottom {
 	background: url(../img/bg/map_bg.jpg) no-repeat center / cover;
-	height: 250px;
+	height: 500px;
 
 	@media (max-width: 1700px) {
-		height: 200px;
+		height: 400px;
 	}
 
 	@media (max-width: 720px) {
 		background-position: 67% 0%;
+		height: 300px;
 	}
 }
 

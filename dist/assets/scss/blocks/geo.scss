@@ -3,6 +3,10 @@
   & .etap__right {
     max-width: 920px !important;
     margin-left: auto;
+
+    @media (max-width: 570px) {
+      height: inherit;
+    }
   }
 
   & .main__title {
@@ -30,7 +34,7 @@
         left: calc(100% - 40px);
       }
 
-      @media (max-width: 800px) {
+      @media (max-width: 570px) {
         font-size: 45px;
         bottom: -45px;
         left: calc(100% - 120px);
@@ -49,5 +53,17 @@
 
   @media (max-width: 550px) {
     padding: 30px 0 35px;
+  }
+}
+
+
+.geo__image {
+  display: block;
+  max-width: 800px;
+  margin: -60px auto 0px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+
+  @media (max-width:700px) {
+    max-width: 100%;
   }
 }

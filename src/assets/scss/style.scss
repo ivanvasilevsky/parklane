@@ -121,6 +121,7 @@ input.error::placeholder {
 	color: brown;
 }
 
+
 /* Font-family */
 @import "fonts.scss";
 
@@ -171,3 +172,13 @@ input.error::placeholder {
 @import "blocks/search.scss";
 
 @import "blocks/contact.scss";
+
+
+.apart__modal__info {
+    display: none;
+}
+
+.etap__right__info__m {
+	letter-spacing: 0.1px;
+	line-height: 0.97;
+}

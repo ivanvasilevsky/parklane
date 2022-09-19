@@ -2,6 +2,8 @@
   position: relative;
   background-color: $gray;
 
+
+
   &::before {
     content: '';
     width: 100%;
@@ -23,7 +25,7 @@
 }
 
 .plan__inner {
-  padding: 300px 0 0;
+  padding: 180px 0 0;
 
   & .main__title__block {
     @media (max-width: 1700px) {
