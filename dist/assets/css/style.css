@@ -2226,22 +2226,112 @@ input[type=radio]:checked::after {
   cursor: pointer;
 }
 
-.plan__sec.b6_14 {
+.plan__sec.b14 {
   top: 69px;
   left: 0;
   width: 246px;
-  height: 342px;
-  -webkit-clip-path: polygon(0 0, 66% 1%, 100% 30%, 100% 100%, 66% 94%, 0 95%);
-          clip-path: polygon(0 0, 66% 1%, 100% 30%, 100% 100%, 66% 94%, 0 95%);
+  height: 134px;
+  -webkit-clip-path: polygon(0 0, 66% 2%, 100% 77%, 100% 100%, 66% 47%, 0 50%);
+          clip-path: polygon(0 0, 66% 2%, 100% 77%, 100% 100%, 66% 47%, 0 50%);
 }
 
-.plan__sec.b3_5 {
+.plan__sec.b13 {
+  top: 132px;
   left: 0;
   width: 246px;
-  -webkit-clip-path: polygon(0 3%, 66% 0, 100% 20%, 100% 100%, 66% 97%, 0 97%);
-          clip-path: polygon(0 3%, 66% 0, 100% 20%, 100% 100%, 66% 97%, 0 97%);
-  height: 103px;
-  top: 391px;
+  height: 95px;
+  -webkit-clip-path: polygon(0 4%, 66% 0%, 100% 75%, 100% 101%, 66% 34%, 0 37%);
+          clip-path: polygon(0 4%, 66% 0%, 100% 75%, 100% 101%, 66% 34%, 0 37%);
+}
+
+.plan__sec.b12 {
+  top: 163px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 3%, 66% 1%, 100% 59%, 100% 84%, 66% 33%, 0 35%);
+          clip-path: polygon(0 3%, 66% 1%, 100% 59%, 100% 84%, 66% 33%, 0 35%);
+}
+
+.plan__sec.b11 {
+  top: 190px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 11%, 66% 9%, 100% 59%, 100% 83%, 66% 37%, 0 40%);
+          clip-path: polygon(0 11%, 66% 9%, 100% 59%, 100% 83%, 66% 37%, 0 40%);
+}
+
+.plan__sec.b10 {
+  top: 221px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 11%, 66% 9%, 100% 55%, 100% 79%, 66% 39%, 0 41%);
+          clip-path: polygon(0 11%, 66% 9%, 100% 55%, 100% 79%, 66% 39%, 0 41%);
+}
+
+.plan__sec.b9 {
+  top: 254px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 11%, 66% 9%, 100% 49%, 100% 74%, 66% 38%, 0 41%);
+          clip-path: polygon(0 11%, 66% 9%, 100% 49%, 100% 74%, 66% 38%, 0 41%);
+}
+
+.plan__sec.b8 {
+  top: 287px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 11%, 66% 8%, 100% 44%, 100% 67%, 66% 37%, 0 39%);
+          clip-path: polygon(0 11%, 66% 8%, 100% 44%, 100% 67%, 66% 37%, 0 39%);
+}
+
+.plan__sec.b7 {
+  top: 319px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 10%, 66% 8%, 100% 38%, 100% 62%, 66% 38%, 0 39%);
+          clip-path: polygon(0 10%, 66% 8%, 100% 38%, 100% 62%, 66% 38%, 0 39%);
+}
+
+.plan__sec.b6 {
+  top: 352px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 9%, 66% 8%, 100% 32%, 100% 54%, 66% 35%, 0 38%);
+          clip-path: polygon(0 9%, 66% 8%, 100% 32%, 100% 54%, 66% 35%, 0 38%);
+}
+
+.plan__sec.b5 {
+  top: 382px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 11%, 66% 8%, 100% 27%, 100% 51%, 66% 39%, 0 40%);
+          clip-path: polygon(0 11%, 66% 8%, 100% 27%, 100% 51%, 66% 39%, 0 40%);
+}
+
+.plan__sec.b4 {
+  top: 416px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 9%, 66% 8%, 100% 20%, 100% 45%, 66% 37%, 0 38%);
+          clip-path: polygon(0 9%, 66% 8%, 100% 20%, 100% 45%, 66% 37%, 0 38%);
+}
+
+.plan__sec.b3 {
+  top: 448px;
+  left: 0;
+  width: 246px;
+  height: 110px;
+  -webkit-clip-path: polygon(0 9%, 66% 8%, 100% 16%, 100% 42%, 66% 39%, 0 39%);
+          clip-path: polygon(0 9%, 66% 8%, 100% 16%, 100% 42%, 66% 39%, 0 39%);
 }
 
 .plan__sec.b2 {
@@ -2253,22 +2343,76 @@ input[type=radio]:checked::after {
   top: 488px;
 }
 
-.plan__sec.v6_10 {
-  top: 272px;
+.plan__sec.v10 {
+  top: 277px;
   left: 246px;
   width: 131px;
-  height: 156px;
-  -webkit-clip-path: polygon(0 13%, 46% 5%, 100% 10%, 100% 95%, 46% 93%, 0 98%);
-          clip-path: polygon(0 13%, 46% 5%, 100% 10%, 100% 95%, 46% 93%, 0 98%);
+  height: 59px;
+  -webkit-clip-path: polygon(0 24%, 46% 5%, 100% 20%, 100% 74%, 46% 67%, 0 97%);
+          clip-path: polygon(0 24%, 46% 5%, 100% 20%, 100% 74%, 46% 67%, 0 97%);
 }
 
-.plan__sec.v3_5 {
+.plan__sec.v9 {
+  top: 314px;
   left: 246px;
   width: 131px;
-  -webkit-clip-path: polygon(0 17%, 46% 8%, 100% 12%, 100% 95%, 46% 93%, 0 95%);
-          clip-path: polygon(0 17%, 46% 8%, 100% 12%, 100% 95%, 46% 93%, 0 95%);
-  height: 88px;
-  top: 410px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 33%, 46% 5%, 100% 12%, 100% 54%, 46% 49%, 0 75%);
+          clip-path: polygon(0 33%, 46% 5%, 100% 12%, 100% 54%, 46% 49%, 0 75%);
+}
+
+.plan__sec.v8 {
+  top: 340px;
+  left: 246px;
+  width: 131px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 31%, 46% 5%, 100% 10%, 100% 50%, 46% 46%, 0 67%);
+          clip-path: polygon(0 31%, 46% 5%, 100% 10%, 100% 50%, 46% 46%, 0 67%);
+}
+
+.plan__sec.v7 {
+  top: 364px;
+  left: 246px;
+  width: 131px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 27%, 46% 5%, 100% 10%, 100% 50%, 46% 46%, 0 64%);
+          clip-path: polygon(0 27%, 46% 5%, 100% 10%, 100% 50%, 46% 46%, 0 64%);
+}
+
+.plan__sec.v6 {
+  top: 388px;
+  left: 246px;
+  width: 131px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 24%, 46% 5%, 100% 10%, 100% 55%, 45% 49%, 0 64%);
+          clip-path: polygon(0 24%, 46% 5%, 100% 10%, 100% 55%, 45% 49%, 0 64%);
+}
+
+.plan__sec.v5 {
+  top: 414px;
+  left: 246px;
+  width: 131px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 19%, 46% 5%, 100% 11%, 100% 49%, 45% 47%, 0 58%);
+          clip-path: polygon(0 19%, 46% 5%, 100% 11%, 100% 49%, 45% 47%, 0 58%);
+}
+
+.plan__sec.v4 {
+  top: 439px;
+  left: 246px;
+  width: 131px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 15%, 46% 5%, 100% 7%, 100% 49%, 45% 47%, 0 52%);
+          clip-path: polygon(0 15%, 46% 5%, 100% 7%, 100% 49%, 45% 47%, 0 52%);
+}
+
+.plan__sec.v3 {
+  top: 464px;
+  left: 246px;
+  width: 131px;
+  height: 59px;
+  -webkit-clip-path: polygon(0 9%, 46% 5%, 100% 7%, 100% 49%, 45% 47%, 0 50%);
+          clip-path: polygon(0 9%, 46% 5%, 100% 7%, 100% 49%, 45% 47%, 0 50%);
 }
 
 .plan__sec.v2 {
@@ -2298,22 +2442,103 @@ input[type=radio]:checked::after {
   top: 82px;
 }
 
-.plan__sec.a9_13 {
+.plan__sec.a13 {
   right: 0;
   width: 354px;
-  -webkit-clip-path: polygon(0 34%, 43% 3%, 100% 0%, 100% 82%, 42% 84%, 0 100%);
-          clip-path: polygon(0 34%, 43% 3%, 100% 0%, 100% 82%, 42% 84%, 0 100%);
-  height: 207px;
+  -webkit-clip-path: polygon(0 71%, 43% 5%, 100% 0, 100% 36%, 42% 41%, 0 99%);
+          clip-path: polygon(0 71%, 43% 5%, 100% 0, 100% 36%, 42% 41%, 0 99%);
+  height: 97px;
   top: 116px;
 }
 
-.plan__sec.a3_8 {
+.plan__sec.a12 {
   right: 0;
   width: 354px;
-  -webkit-clip-path: polygon(0 22%, 43% 2%, 100% 0, 100% 96%, 42% 96%, 0 100%);
-          clip-path: polygon(0 22%, 43% 2%, 100% 0, 100% 96%, 42% 96%, 0 100%);
-  height: 174px;
+  -webkit-clip-path: polygon(0 63%, 43% 4%, 100% 0, 100% 34%, 42% 39%, 0 96%);
+          clip-path: polygon(0 63%, 43% 4%, 100% 0, 100% 34%, 42% 39%, 0 96%);
+  height: 97px;
+  top: 151px;
+}
+
+.plan__sec.a11 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 62%, 43% 4%, 100% 0, 100% 34%, 42% 39%, 0 90%);
+          clip-path: polygon(0 62%, 43% 4%, 100% 0, 100% 34%, 42% 39%, 0 90%);
+  height: 97px;
+  top: 184px;
+}
+
+.plan__sec.a10 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 56%, 43% 4%, 100% 0, 100% 34%, 42% 39%, 0 83%);
+          clip-path: polygon(0 56%, 43% 4%, 100% 0, 100% 34%, 42% 39%, 0 83%);
+  height: 97px;
+  top: 217px;
+}
+
+.plan__sec.a9 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 45%, 43% 4%, 100% 0, 100% 34%, 43% 38%, 0 71%);
+          clip-path: polygon(0 45%, 43% 4%, 100% 0, 100% 34%, 43% 38%, 0 71%);
+  height: 105px;
+  top: 250px;
+}
+
+.plan__sec.a8 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 55%, 43% 5%, 100% 0, 100% 45%, 43% 49%, 0 94%);
+          clip-path: polygon(0 55%, 43% 5%, 100% 0, 100% 45%, 43% 49%, 0 94%);
+  height: 70px;
   top: 286px;
+}
+
+.plan__sec.a7 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 50%, 43% 5%, 100% 0, 100% 51%, 43% 55%, 0 91%);
+          clip-path: polygon(0 50%, 43% 5%, 100% 0, 100% 51%, 43% 55%, 0 91%);
+  height: 70px;
+  top: 317px;
+}
+
+.plan__sec.a6 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 41%, 43% 5%, 100% 0, 100% 51%, 43% 55%, 0 81%);
+          clip-path: polygon(0 41%, 43% 5%, 100% 0, 100% 51%, 43% 55%, 0 81%);
+  height: 70px;
+  top: 352px;
+}
+
+.plan__sec.a5 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 31%, 43% 5%, 100% 0, 100% 51%, 43% 50%, 0 68%);
+          clip-path: polygon(0 31%, 43% 5%, 100% 0, 100% 51%, 43% 50%, 0 68%);
+  height: 70px;
+  top: 387px;
+}
+
+.plan__sec.a4 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 17%, 43% 0%, 100% 0, 100% 45%, 43% 46%, 0 56%);
+          clip-path: polygon(0 17%, 43% 0%, 100% 0, 100% 45%, 43% 46%, 0 56%);
+  height: 70px;
+  top: 423px;
+}
+
+.plan__sec.a3 {
+  right: 0;
+  width: 354px;
+  -webkit-clip-path: polygon(0 10%, 43% 0, 100% 0, 100% 45%, 43% 46%, 0 56%);
+          clip-path: polygon(0 10%, 43% 0, 100% 0, 100% 45%, 43% 46%, 0 56%);
+  height: 80px;
+  top: 455px;
 }
 
 .footer {
@@ -6095,7 +6320,7 @@ a.footer__right__item {
     line-height: 1;
   }
 
-  .plan__sec.b6_14 {
+  .plan__sec.b14 {
     top: 38px;
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
@@ -6105,8 +6330,109 @@ a.footer__right__item {
             transform-origin: top left;
   }
 
-  .plan__sec.b3_5 {
-    top: 215px;
+  .plan__sec.b13 {
+    top: 72px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b12 {
+    top: 89px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b11 {
+    top: 103px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b10 {
+    top: 120px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b9 {
+    top: 138px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b8 {
+    top: 156px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b7 {
+    top: 173px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b6 {
+    top: 191px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b5 {
+    top: 207px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b4 {
+    top: 226px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.b3 {
+    top: 243px;
+    height: 121px;
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
             transform: scale(0.55);
@@ -6125,8 +6451,8 @@ a.footer__right__item {
             transform-origin: top left;
   }
 
-  .plan__sec.v6_10 {
-    top: 148px;
+  .plan__sec.v10 {
+    top: 152px;
     left: 134px;
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
@@ -6136,8 +6462,74 @@ a.footer__right__item {
             transform-origin: top left;
   }
 
-  .plan__sec.v3_5 {
-    top: 224px;
+  .plan__sec.v9 {
+    top: 172px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v8 {
+    top: 186px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v7 {
+    top: 199px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v6 {
+    top: 212px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v5 {
+    top: 226px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v4 {
+    top: 240px;
+    left: 134px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+  }
+
+  .plan__sec.v3 {
+    top: 254px;
     left: 134px;
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
@@ -6178,7 +6570,7 @@ a.footer__right__item {
             transform-origin: top right;
   }
 
-  .plan__sec.a9_13 {
+  .plan__sec.a13 {
     top: 64px;
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
@@ -6188,8 +6580,98 @@ a.footer__right__item {
             transform-origin: top right;
   }
 
-  .plan__sec.a3_8 {
+  .plan__sec.a12 {
+    top: 83px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a11 {
+    top: 101px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a10 {
+    top: 119px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a9 {
+    top: 137px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a8 {
     top: 157px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a7 {
+    top: 174px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a6 {
+    top: 193px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a5 {
+    top: 212px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a4 {
+    top: 231px;
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+  }
+
+  .plan__sec.a3 {
+    top: 248px;
     -webkit-transform: scale(0.55);
         -ms-transform: scale(0.55);
             transform: scale(0.55);
