@@ -2226,6 +2226,13 @@ input[type=radio]:checked::after {
   cursor: pointer;
 }
 
+.plan__sec:active {
+  opacity: 0.4;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .plan__sec.b14 {
   top: 69px;
   left: 0;

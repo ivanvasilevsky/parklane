@@ -204,6 +204,11 @@
     cursor: pointer;
   }
 
+  &:active {
+    opacity: 0.4;
+    transition: .3s;
+  }
+
   @media (max-width: 800px) {
     display: none;
   }
