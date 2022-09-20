@@ -3120,7 +3120,7 @@ a.footer__right__item {
   border-bottom: 1px solid #efeff1;
   padding-bottom: 20px;
   overflow: hidden;
-  max-height: 150px;
+  max-height: 370px;
   -webkit-transition: 0.05s;
   -o-transition: 0.05s;
   transition: 0.05s;
@@ -3129,18 +3129,17 @@ a.footer__right__item {
 .mobile__modal__house:last-child {
   padding-bottom: 0px;
   border: none;
-  max-height: 180px;
 }
 
 .mobile__modal__house.active {
-  max-height: 350px;
+  max-height: 750px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 .mobile__modal__house.active:last-child {
-  max-height: 550px;
+  max-height: 720px;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
   transition: 0.8s;
@@ -3157,6 +3156,10 @@ a.footer__right__item {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mobile__modal__house__image {
@@ -3164,20 +3167,40 @@ a.footer__right__item {
   width: 100%;
 }
 
+.mobile__modal__house__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .mobile__modal__house__btn {
-  margin-right: auto;
   font-size: 17px;
   text-transform: uppercase;
   padding: 14px 14px 14px 10px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+}
+
+.mobile__modal__house__etaj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile__modal__house__etaj__item {
+  width: calc(33.3% - 10px);
+  margin: 0 5px;
   font-size: 16px;
   text-transform: uppercase;
   background-color: #efeff1;
@@ -3189,10 +3212,6 @@ a.footer__right__item {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-}
-
-.mobile__modal__house__etaj__item:last-child {
-  margin-bottom: 0px;
 }
 
 .mobile__modal__house__etaj__item.active {
@@ -8025,6 +8044,10 @@ a.footer__right__item {
     font-size: 13px;
   }
 
+  .mobile__modal__house {
+    max-height: 340px;
+  }
+
   .mobile__modal__house__image {
     max-width: 120px;
   }
@@ -8208,6 +8231,10 @@ a.footer__right__item {
   .header__soc__img {
     width: 15px;
     height: 15px;
+  }
+
+  .mobile__modal__house {
+    max-height: 260px;
   }
 
   .mobile__modal__house__image {
